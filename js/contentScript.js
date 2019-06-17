@@ -1,6 +1,5 @@
 
-//默认设置
-document.body.style.background = '#b8b8b8';
+
 
 // 站点设置
 var strhref = window.location.href;
@@ -13,21 +12,32 @@ var newssoret = /news.so.com/;
 var sogou123ret = /123.sogou.com/;
 // 微信页面处理
 if(wxre.test(strhref)) {
+    commonsetting();
     wxpage();
 } else if(bdfyre.test(strhref)) {
+    commonsetting();
     bdfypage();
 } else if(bdre.test(strhref)) {
+    commonsetting();
     bdpage();
 } else if(wxmpret.test(strhref)) {
+    commonsetting();
     wxmppage();
 } else if(soret.test(strhref)) {
+    commonsetting();
     sopage();
 } else if(newssoret.test(strhref)) {
+    commonsetting();
     newssopage();
 } else if(sogou123ret.test(strhref)) {
+    commonsetting();
     sogou123page();
 } 
 
+//默认设置
+function commonsetting() {
+    document.body.style.background = '#b8b8b8';
+}
 
 
 function wxpage() {
