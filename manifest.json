@@ -1,0 +1,42 @@
+{
+	"manifest_version": 2,
+	"name": "crxhyw",
+	"version": "1.0",
+	"description": "插件测试",
+	"author": "hywmickey",
+///*
+	"icons":
+	{
+		"48": "img/boy.jpeg",
+		"128": "img/boy.jpeg"
+	},
+	//*/
+	"browser_action": 
+	{
+		"default_icon": "img/boy.jpeg",
+		"default_title" : "this is browser_action",
+		"default_popup": "popup.html"
+	},
+	"background":
+	{
+		// 2种指定方式，如果指定JS，那么会自动生成一个背景页
+		//"page": "background.html"
+		"scripts": ["background.js"]
+
+	},
+
+	"content_scripts":
+	[
+		{
+			"matches": ["<all_urls>"],
+			"js":["js/contentScript.js"],
+			"run_at": "document_end"
+		}
+	],
+
+	// 权限申请
+	"permissions":
+	[
+		"contextMenus" // 右键菜单
+	]
+}
