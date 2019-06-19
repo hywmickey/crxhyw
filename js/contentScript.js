@@ -63,7 +63,7 @@ function wxpage() {
 
     // 聊天区域修改
     var chatArea = document.querySelector("#chatArea");
-    chatArea.addEventListener('click', function(e) {
+    chatArea.addEventListener('mouseover', function(e) {
 
         // 整个顶部置黑
         var box_hd = document.querySelector("#chatArea");
@@ -93,7 +93,7 @@ function wxpage() {
 
     // 好友列表修改
     var friendList = document.querySelector("#J_NavChatScrollBody > div");
-    friendList.addEventListener('click', function(e) {
+    friendList.addEventListener('mouseover', function(e) {
         // 隐藏好友头像
         var avatarList = document.getElementsByClassName('avatar');
         for (var i = avatarList.length - 1; i >= 0; i--) {
@@ -133,8 +133,19 @@ function bdfypage() {
 function bdpage() {
     // 改变背景色
     document.body.style.background = '#d8d8d8';
+
+
+    // content_left
+    var wrapper = document.querySelector("#wrapper");
+    wrapper.addEventListener('mouseover', function(e) {
+        document.querySelector("#content_right").style.visibility='hidden'; 
+    });
+
+
+
     // 删掉右侧内容
     document.querySelector("#content_right").style.visibility='hidden'; 
+    document.querySelector("#content_right").style.display='none';
 
     document.querySelector("#head > div").style.background = '#d8d8d8';
 
