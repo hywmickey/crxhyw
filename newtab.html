@@ -13,8 +13,23 @@
             background: black;
         }
     
-        .top-padding {
+        .top {
+            margin: 5px auto;
+            width: 900px;
             height: 50px;
+            background-color: #222;
+        }
+
+        .top span {
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            width: 225px;
+            display: inline-block;
+        }
+
+        .top .timeout{
+            color: red;
         }
 
         .items {
@@ -34,10 +49,18 @@
             background: #333;
         }
 
+        .bottom p {
+            color: white;
+            text-align: center;
+            font-size: 32px;
+        }
     </style>
+
+
+
 </head>
 <body>
-    <div class="top-padding"></div>
+    <div class="top"></div>
     <div class="items">
         <p><a href="https://github.com/">github</a></p>
         <p><a href="https://www.baidu.com/s?wd=baidu">Baidu</a></p>
@@ -81,6 +104,9 @@
         <p><a href="https://www.ef.com/wwen/english-resources/">EF</a></p>
         
     </div>
-    
+    <div class="bottom">
+        <p>What are you doing? What's the point?</p>
+    </div>
 </body>
+<script type="text/javascript" src="js/newtab.js"></script>
 </html>
