@@ -15,7 +15,7 @@ if(wxre.test(strhref)) {
     commonsetting();
     wxpage();
 } else if(bdfyre.test(strhref)) {
-    commonsetting();
+    //commonsetting();
     bdfypage();
 } else if(bdre.test(strhref)) {
     commonsetting();

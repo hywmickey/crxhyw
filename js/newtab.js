@@ -1,6 +1,7 @@
 
 
 setInterval(function(){timeDown();}, 1000);
+// loadXMLDoc();
 function timeDown() {
 	var strTop = document.querySelector("body > div.top");
 	//console.log(strTop.innerHTML );
@@ -68,4 +69,35 @@ function getFormateDiffTime(intTime1, intTime2) {
 	}
 
 	return strTime;
+}
+
+function loadXMLDoc()
+{
+    var xmlhttp;
+    //console.log(111111);
+
+    ///*
+    if (window.XMLHttpRequest)
+    {
+        //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+        xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {
+        // IE6, IE5 浏览器执行代码
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function()
+    {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+            //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+
+            //console.log(xmlhttp.responseText);
+            console.log(JSON.parse(xmlhttp.responseText));
+        }
+    }
+    xmlhttp.open("GET","https://fanyi.baidu.com/pcnewcollection?req=get&dstStatus=all&order=time&direction=all&page=0&pagesize=30&gid=860772&_=1561509315056",true);
+    xmlhttp.send();
+    //*/
 }
