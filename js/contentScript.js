@@ -68,7 +68,7 @@ function wxpage() {
         // 整个顶部置黑
         var box_hd = document.querySelector("#chatArea");
         box_hd.style.background = 'black';
-
+        box_hd.style.backgroundColor = 'black';
 
         box_hd = document.querySelector("#chatArea > div.box_hd");
         box_hd.style.background = 'black';
