@@ -155,7 +155,7 @@ function bdpage() {
 
 // 微信文章页面
 function wxmppage() {
-    document.querySelector("#page-content").style.background = '#d8d8d8';
+    //document.querySelector("#page-content").style.background = '#d8d8d8';
     //document.querySelector("#page-content").style.background = '#378826';
     var qrcode = document.querySelector("#js_pc_qr_code");
     qrcode.parentNode.removeChild(qrcode);
