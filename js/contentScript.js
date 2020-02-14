@@ -18,11 +18,11 @@ if(wxre.test(strhref)) {
     //commonsetting();
     bdfypage();
 } else if(bdre.test(strhref)) {
-    commonsetting();
-    bdpage();
+    //commonsetting();
+    //bdpage();
 } else if(wxmpret.test(strhref)) {
-    commonsetting();
-    wxmppage();
+    //commonsetting();
+    //wxmppage();
 } else if(soret.test(strhref)) {
     commonsetting();
     sopage();
