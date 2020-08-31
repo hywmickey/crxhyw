@@ -4,13 +4,13 @@
     onclick: function(params){
 
         var ldoceTpl="https://www.ldoceonline.com/dictionary/";
-        var baiduTpl = 'http://fanyi.baidu.com/#en/zh/';
+        var baiduTpl = 'https://fanyi.baidu.com/#en/zh/';
         var oxforTpl = 'https://www.oxfordlearnersdictionaries.com/definition/english/';
         word = params.selectionText;
         
-        ldoceTpl = ldoceTpl+word;
+        //ldoceTpl = ldoceTpl+word;
         baiduTpl = baiduTpl+word;
-        oxforTpl = oxforTpl+word;
+        //oxforTpl = oxforTpl+word;
         
         //ldoceWin = window.open(ldoceTpl,'ldoce','left=920,top=0,width=500,height=800,location=0,status=0');
         //oxforWin = window.open(oxforTpl,'oxford','left=1000,top=0,width=500,height=800,location=0,status=0');

@@ -10,6 +10,7 @@ var wxmpret = /mp.weixin.qq.com/;
 var soret = /www.so.com/;
 var newssoret = /news.so.com/;
 var sogou123ret = /123.sogou.com/;
+var jb51ret = /www.jb51.net/;
 // 微信页面处理
 if(wxre.test(strhref)) {
     commonsetting();
@@ -33,6 +34,10 @@ if(wxre.test(strhref)) {
     commonsetting();
     sogou123page();
 } 
+// else if(jb51ret.test(strhref)) {
+//     jb51page();
+// }
+
 
 //默认设置
 function commonsetting() {
@@ -189,4 +194,58 @@ function newssopage() {
 
 function sogou123page() {
     document.querySelector("body").style.visibility='hidden'; 
+}
+
+function jb51page() {
+    removeByQuerySelector('#container > div.pt10.clearfix');
+    removeByQuerySelector('#aswift_0');
+    removeByQuerySelector('#aswift_1');
+    removeByQuerySelector('#_as98qfrbiws');
+    removeByQuerySelector('#content > div.lbd_bot.clearfix');
+    removeByQuerySelector('#article > div.tags.clearfix');
+    removeByQuerySelector('#sidebar-right > div.mt10.rFixedBox');
+    removeByQuerySelector('#pic_container');
+    removeByQuerySelector('#sidebar-right > div:nth-child(9)');
+    removeByQuerySelector('#sidebar-right > div:nth-child(5)');
+    removeByQuerySelector('#sidebar-right > div:nth-child(3)');
+    removeByQuerySelector('#article > div:nth-child(7)');
+    removeByQuerySelector('#sidebar-right > div.sidebox-recomm');
+    removeByQuerySelector('#sidebar-right > div:nth-child(1)');
+    removeByQuerySelector('#header');
+    
+}
+
+function removeIframe() {
+
+}
+
+
+function removeByQuerySelector(strSelector) {
+    var oDom = document.querySelector(strSelector);
+
+    if(!isNull(oDom)) {
+        oDom.remove(); 
+    } else {
+        console.log('not fund:'+strSelector);
+    }
+}
+
+
+function setHiddenByQuerySelector(strSelector) {
+    var oDom = document.querySelector(strSelector);
+
+    if(!isNull(oDom)) {
+        oDom.style.visibility='hidden'; 
+    } else {
+        console.log('not fund:'+strSelector);
+    }
+}
+
+
+function isNull(value) {
+    if (!value && typeof value != "undefined" && value != 0) {
+        return true;
+    } else {
+        return false;
+    }
 }

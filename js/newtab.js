@@ -1,6 +1,6 @@
 
 
-setInterval(function(){timeDown();}, 1000);
+//setInterval(function(){timeDown();}, 1000);
 // loadXMLDoc();
 function timeDown() {
 	var strTop = document.querySelector("body > div.top");
