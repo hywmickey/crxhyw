@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title></title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+<title>git</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
 iframe { margin: auto; }
@@ -16,6 +16,7 @@ a:active, a:hover { outline: 0px; }
 .for-image #write { padding-left: 8px; padding-right: 8px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 .typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
 @media screen and (max-width: 500px) { 
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
@@ -86,7 +87,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   html.blink-to-pdf { font-size: 13px; }
-  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write { break-after: avoid-page; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
 }
@@ -153,6 +154,9 @@ svg[id^="mermaidChart"] { line-height: 1em; }
 mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
 
 
 :root {
@@ -162,22 +166,39 @@ mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 
 @include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
 
-html {
-    font-size: 24px;
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
 }
 
 body {
-    font-family: 'Courier New','Weibei SC';
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.6;
 }
 
 #write {
-    
+    max-width: 860px;
   	margin: 0 auto;
   	padding: 30px;
     padding-bottom: 100px;
 }
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
 #write > ul:first-child,
 #write > ol:first-child{
     margin-top: 30px;
@@ -232,17 +253,33 @@ h6 code {
     font-size: inherit;
 }
 h1 {
-    padding-bottom: .3em;
     font-size: 2.25em;
     line-height: 1.2;
     border-bottom: 1px solid #eee;
 }
 h2 {
-   padding-bottom: .3em;
     font-size: 1.75em;
     line-height: 1.225;
     border-bottom: 1px solid #eee;
 }
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
 h3 {
     font-size: 1.5em;
     line-height: 1.43;
@@ -257,7 +294,6 @@ h6 {
    font-size: 1em;
     color: #777;
 }
-
 p,
 blockquote,
 ul,
@@ -354,7 +390,7 @@ tt {
     border-radius: 3px;
     padding: 0;
     padding: 2px 4px 0px 4px;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 code {
@@ -465,7 +501,7 @@ code {
 }
 
 header, .context-menu, .megamenu-content, footer{
-    font-family: 'Courier New','Weibei SC';
+    font-family: "Segoe UI", "Arial", sans-serif;
 }
 
 .file-node-content:hover .file-node-icon,
@@ -506,7 +542,7 @@ header, .context-menu, .megamenu-content, footer{
  .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
 </style>
 </head>
-<body class='typora-export' >
-<div  id='write'  class = ''><p><span>git 操作</span></p><p><span>509  cd git/</span></p><p><span>下载代码</span></p><p><span>  511  git clone </span><a href='mailto:git@git.afpai.com' target='_blank' class='url'>git@git.afpai.com</a><span>:baichuan/editzuoye.git</span></p><p><span>切换到 dev</span></p><p><span>  515  git checkout dev</span></p><p><span>要看状态 </span></p><p><span>  520  git status</span></p><p><span>添加 修改的文件</span></p><p><span>  521  git add .</span></p><p><span>提交到本地库</span></p><p><span>  522  git commit -m &#39;hyw test&#39;</span></p><p><span>提交到线上库</span></p><p><span>  523  git push origin dev</span></p><p><span>  526  git status</span></p><p><span>  527  git add .</span></p><p><span>  529  git commit -m &#39;hyw update&#39;</span></p><p><span>省略origin dev 可以加 -u</span></p><p><span>  530  git push -u origin dev</span></p><p><span>  532  git status</span></p><p><span>  533  git add .</span></p><p><span>  534  git status</span></p><p><span>  535  git commit -m &#39;hyw update v2&#39;</span></p><p><span>  536  git status</span></p><p><span>不用加 origin dev了</span></p><p><span>  537  git push</span></p><p><span>更新本地代码</span></p><p><span>  538  git pull</span></p><p><span>merge mater</span></p><p><span>  571  git checkout master</span></p><p><span>  572  git merge dev</span></p><p><span>  577  git push</span></p><p><span>git 的冲突解决</span></p><p><span>git stash</span></p><p><span>git pull</span></p><p><span>git stash pop</span></p><p><span>mac 命令行下的git 增强插件</span></p><p><span>git log</span></p><p><span>git add</span></p><p><span>git commit -m </span></p><p><span>git commit -a -m</span></p><p><span>删除文件</span></p><p><span>rm filename</span></p><p><span>git rm filename</span></p><p><span>git commit -m “ git delete filename &quot;</span></p><p><span>重命名文件</span></p><p><span>git mv filename1 filename2</span></p><p><span>git commit -m ‘rename filename1&#39;</span></p><p><span>重命名相当于执行了以下三条命令</span></p><ol><li><span>mv filename1 filename2</span></li><li><span>git rm filename1</span></li><li><span>git add filename2</span></li></ol><p><span>git 远程仓库实际就是保存在服务器上的git仓库文件</span></p><p><span>git 的fetch 和 clone 的区别：</span></p><p><span>     fetch 命令只是将远端的数据拉到本地仓 库,并不自动合并到当前工作分支,只有当你确实准备好了,才能手工合并。</span></p><p><span>     验证标签，查看远端标签</span></p><p><span>git merge 分支名  &lt;=&gt; git merge origin 分支名</span></p><p><span>git merge remote branchname</span></p><p><span>git merge origin branchname</span></p><p><span>$ git checkout -b iss53</span></p><p><span>等同于下面的命令</span></p><p><span>$ git branch iss53</span></p><p><span>$ git checkout iss53</span></p><p><span>将分支推送到远程服务器</span></p><p><span>git push --set-upstream origin iss53</span></p><p><span>查看git项目在哪个路径下</span></p><p><span> git remote -v</span></p><p><span>查看本地分支</span></p><p><span>git branch</span></p><p><span>查看远程分支</span></p><p><span>git branch -a</span></p><p><span>删除分支</span></p><p><span>$ git branch -d iss53</span></p><p><span>删除远程分支</span></p><p><span> git push origin --delete iss53</span></p><p><span>添加tag</span></p><p><span>git tag -a 1.1.3 -m &#39;fix bug&#39;</span></p><p><span>推送tag 到远端</span></p><p><span>git push origin --tags</span></p><p><span>列出tag</span></p><p><span>git tag -l</span></p></div>
+<body class='typora-export'>
+<div id='write'  class=''><p><span> 509 cd git/</span></p><p><span>下载代码</span></p><p><span> 511 git clone </span><a href='mailto:git@git.afpai.com' target='_blank' class='url'>git@git.afpai.com</a><span>:baichuan/editzuoye.git</span></p><p><span>切换到 dev</span></p><p><span> 515 git checkout dev</span></p><p><span>要看状态 </span></p><p><span> 520 git status</span></p><p><span>添加 修改的文件</span></p><p><span> 521 git add .</span></p><p><span>提交到本地库</span></p><p><span> 522 git commit -m &#39;hyw test&#39;</span></p><p><span>提交到线上库</span></p><p><span> 523 git push origin dev</span></p><p><span> 526 git status</span></p><p><span> 527 git add .</span></p><p><span> 529 git commit -m &#39;hyw update&#39;</span></p><p><span>省略origin dev 可以加 -u</span></p><p><span> 530 git push -u origin dev</span></p><p><span> 532 git status</span></p><p><span> 533 git add .</span></p><p><span> 534 git status</span></p><p><span> 535 git commit -m &#39;hyw update v2&#39;</span></p><p><span> 536 git status</span></p><p><span>不用加 origin dev了</span></p><p><span> 537 git push</span></p><p><span>更新本地代码</span></p><p><span> 538 git pull</span></p><p><span>merge mater</span></p><p><span> 571 git checkout master</span></p><p><span> 572 git merge dev</span></p><p><span> 577 git push</span></p><p><span>git 的冲突解决</span></p><p><span>git stash</span></p><p><span>git pull</span></p><p><span>git stash pop</span></p><p><span>mac 命令行下的git 增强插件</span></p><p><span>git log</span></p><p><span>git add</span></p><p><span>git commit -m </span></p><p><span>git commit -a -m</span></p><p><span>删除文件</span></p><p><span>rm filename</span></p><p><span>git rm filename</span></p><p><span>git commit -m “ git delete filename &quot;</span></p><p><span>重命名文件</span></p><p><span>git mv filename1 filename2</span></p><p><span>git commit -m ‘rename filename1&#39;</span></p><p><span>重命名相当于执行了以下三条命令</span></p><ol><li><span>mv filename1 filename2</span></li><li><span>git rm filename1</span></li><li><span>git add filename2</span></li></ol><p><span>git 远程仓库实际就是保存在服务器上的git仓库文件</span></p><p><span>git 的fetch 和 clone 的区别：</span></p><p><span>   fetch 命令只是将远端的数据拉到本地仓 库,并不自动合并到当前工作分支,只有当你确实准备好了,才能手工合并。</span></p><p><span>   验证标签，查看远端标签</span></p><p><span>git merge 分支名  &lt;=&gt; git merge origin 分支名</span></p><p><span>git merge remote branchname</span></p><p><span>git merge origin branchname</span></p><p><span>$ git checkout -b iss53</span></p><p><span>等同于下面的命令</span></p><p><span>$ git branch iss53</span></p><p><span>$ git checkout iss53</span></p><p><span>将分支推送到远程服务器</span></p><p><span>git push --set-upstream origin iss53</span></p><p><span>查看git项目在哪个路径下</span></p><p><span> git remote -v</span></p><p><span>查看本地分支</span></p><p><span>git branch</span></p><p><span>查看远程分支</span></p><p><span>git branch -a</span></p><p><span>删除分支</span></p><p><span>$ git branch -d iss53</span></p><p><span>删除远程分支</span></p><p><span> git push origin --delete iss53</span></p><p><span>添加tag</span></p><p><span>git tag -a 1.1.3 -m &#39;fix bug&#39;</span></p><p><span>推送tag 到远端</span></p><p><span>git push origin --tags</span></p><p><span>列出tag</span></p><p><span>git tag -l</span></p><p>&nbsp;</p><p><span>查看配置</span></p><p><span>查看仓库配置 git config --local -l</span></p><p><span>查看用户配置 git config --global -l</span></p><p><span>查看系统配置 git config --system -l</span></p><p>&nbsp;</p></div>
 </body>
 </html>
