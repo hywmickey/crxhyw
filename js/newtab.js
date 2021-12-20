@@ -69,6 +69,31 @@ bookMarkList = [
 	]
 ];
 
+
+
+
+for (i in bookMarkList) {
+	
+	lineNum = Math.ceil(bookMarkList[i].length/5);
+	newBookMarkList = [];
+	for (c =0 ; c<5; c++) {
+		for(r=0; r<lineNum;r++){
+			offset = r*lineNum + c;
+			if (offset < bookMarkList[i].length){
+				//console.log(offset);
+				newBookMarkList.push(bookMarkList[i][offset]);
+			}
+			
+		}
+	}
+	bookMarkList[i] = newBookMarkList;
+
+	//console.log(lineNum);
+	
+}
+
+
+
 blockMarkObj = document.createDocumentFragment();
 for (i in bookMarkList) {
 	itemObj = document.createElement("div");
