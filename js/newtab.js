@@ -75,28 +75,27 @@ for (index in bookMarkList) {
 		continue;
 	}
 
+	if (bookMarkList[index].length <= c) {
+		continue;
+	}
+
 	r = Math.ceil(bookMarkList[index].length/c); // 行数
-	//console.log("-------", r);
-	rh = r-1; // 整行数
-	cp = bookMarkList[index].length % c; //  前部分整列数
-	cs = c - cp; // 后部分非整列数
+
+	rh = r // 整行的数量 或非整列在行内的索引步长
+	cp = c // 整列数的数量
+	remainder =  bookMarkList[index].length % c; // 余数
+	if (remainder > 0 ) {
+		rh = r-1
+		cp = remainder
+	} 
 	newBookMarkList = [];
-	
-	for (i = 0 ; i < r ; i++) {
-		offset = 0;
-		for (j = 0; j < c ; j++) {
-			if (cp == 0) { // 如果没有余数
-				offset = j*r + i
-			} else {
-				if (j == 0) {
-					offset = i;
-				} else if (j <= cp ) {
-					//offset += r;
-					offset = i + j * r; 
-				} else {
-					//offset +=  (j- cp -1 ) * rh
-					offset = i + cp * r + ( (j - cp - 1 ) * rh )
-				}
+	for (i = 0 ; i < r ; i++) { // 遍历行
+		for (j = 0; j < c ; j++) { // 遍历列
+			offset = 0;
+			if (j <= cp){ //如果当前列是整列或紧挨整列后的一列
+				offset = i + j * r; 
+			} else  { // 当前列为非整列， 【行号】+ 整列索引步长 * 整列数量 + 当前列到非整列距离* 非整列在行内索引步长
+				offset = i + cp * r + ( (j - cp -1 ) * rh )
 			}
 			if (offset < bookMarkList[index].length) {
 				newBookMarkList.push(bookMarkList[index][offset]);
