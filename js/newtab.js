@@ -27,23 +27,23 @@ bookMarkList = [
 		["搜榜", "https://www.bjsoubang.com/"]
 	],
 	[
+		["日历", "https://www.baidu.com/s?wd=日历"],
 		["dedao", "https://www.dedao.cn/"],
 		["trello", "https://trello.com/"],
+		["github", "https://hub.fastgit.org/"],
 		["topbook", "https://topbook.cc/"],
 		["少数派", "https://sspai.com/"],
 		["Anki", "https://ankiuser.net/study/"],
 		["有知有行", "https://youzhiyouxing.cn/materials"],
-		["日历", "https://www.baidu.com/s?wd=日历"],
 		["音频转文字", "https://app.xunjiepdf.com/voice2text"],
 		["讯飞快读", "https://www.ffkuaidu.com/"],
 		["vocabulary", "https://www.vocabulary.com/"],
 		["全历史", "https://www.allhistory.com/"],
-		["json", "https://www.json.cn/"],
+		["bejson", "https://www.bejson.com/"],
 		["statcounter", "http://gsa.statcounter.com/"],
 		["aliWebmin", "http://47.94.137.24:10000/"],
 		["COVID", "https://voice.baidu.com/act/newpneumonia/newpneumonia/"],
 		["图形计算器", "https://www.desmos.com/calculator?lang=zh-CN"],
-		["github", "https://hub.fastgit.org/"],
 		["GitHub中文社区", "https://www.githubs.cn/"],
 		["GitOpt", "./html/gitopt.html"]
 	],
@@ -57,8 +57,7 @@ bookMarkList = [
 	[
 		["便签", "https://yun.smartisan.com/#/notes"],
 		["笔记", "https://note.youdao.com"],
-		["新生", "https://b.xinshengdaxue.com/index.html"],
-		["枯燥", "./html/text.html"]
+		["新生", "https://b.xinshengdaxue.com/index.html"]
 	],
 	[
 		["早时光书屋", "https://nt-registrar.zuoyebang.cc/static/fe-store-mis/#/store/store-list"],
@@ -69,30 +68,44 @@ bookMarkList = [
 	]
 ];
 
+// 按列优先级的方式排列数据
+c = 5; // 列数
+for (index in bookMarkList) {
+	if (bookMarkList[index].length <= 0) {
+		continue;
+	}
 
-
-
-for (i in bookMarkList) {
-	
-	lineNum = Math.ceil(bookMarkList[i].length/5);
+	r = Math.ceil(bookMarkList[index].length/c); // 行数
+	//console.log("-------", r);
+	rh = r-1; // 整行数
+	cp = bookMarkList[index].length % c; //  前部分整列数
+	cs = c - cp; // 后部分非整列数
 	newBookMarkList = [];
-	for (c =0 ; c<5; c++) {
-		for(r=0; r<lineNum;r++){
-			offset = r*lineNum + c;
-			if (offset < bookMarkList[i].length){
-				//console.log(offset);
-				newBookMarkList.push(bookMarkList[i][offset]);
+	
+	for (i = 0 ; i < r ; i++) {
+		offset = 0;
+		for (j = 0; j < c ; j++) {
+			if (cp == 0) { // 如果没有余数
+				offset = j*r + i
+			} else {
+				if (j == 0) {
+					offset = i;
+				} else if (j <= cp ) {
+					//offset += r;
+					offset = i + j * r; 
+				} else {
+					//offset +=  (j- cp -1 ) * rh
+					offset = i + cp * r + ( (j - cp - 1 ) * rh )
+				}
 			}
-			
+			if (offset < bookMarkList[index].length) {
+				newBookMarkList.push(bookMarkList[index][offset]);
+				//console.log(index,offset,bookMarkList[index][offset]);
+			}
 		}
 	}
-	bookMarkList[i] = newBookMarkList;
-
-	//console.log(lineNum);
-	
+	bookMarkList[index] = newBookMarkList
 }
-
-
 
 blockMarkObj = document.createDocumentFragment();
 for (i in bookMarkList) {
