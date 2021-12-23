@@ -56,16 +56,16 @@ bookMarkList = [
 		["EF", "https://www.ef.com/wwen/english-resources/"]
 	],
 	[
+		["早时光书屋", "https://nt-registrar.zuoyebang.cc/static/fe-store-mis/#/store/store-list"],
+		["天火平台", "https://tianhuo.zuoyebang.cc/"],
+		["监控平台", "http://op.zuoyebang.cc/static/odin/#/monitor/graph"],
+		["棒棒堂", "http://www.zuoyebang.cc"],
+		["HR", "http://hr.zuoyebang.cc"]
+	],
+	[
 		["便签", "https://yun.smartisan.com/#/notes"],
 		["笔记", "https://note.youdao.com"],
 		["新生", "https://b.xinshengdaxue.com/index.html"]
-	],
-	[
-		["早时光书屋", "https://nt-registrar.zuoyebang.cc/static/fe-store-mis/#/store/store-list"],
-		["git", "https://git.afpai.com/"],
-		["监控平台", "http://op.zuoyebang.cc/static/odin/#/monitor/graph"],
-		["OA", "http://oa.zuoyebang.cc"],
-		["HR", "http://hr.zuoyebang.cc"]
 	]
 ];
 
