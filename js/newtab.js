@@ -46,6 +46,7 @@ bookMarkList = [
 		["COVID", "https://voice.baidu.com/act/newpneumonia/newpneumonia/"],
 		["图形计算器", "https://www.desmos.com/calculator?lang=zh-CN"],
 		["GitHub中文社区", "https://www.githubs.cn/"],
+		["古董电脑室", "https://zhuanlan.zhihu.com/retrocomputing"],
 		["GitOpt", "./html/gitopt.html"]
 	],
 	[
@@ -68,7 +69,7 @@ bookMarkList = [
 		["新生", "https://b.xinshengdaxue.com/index.html"]
 	]
 ];
-
+/*
 // 按列优先级的方式排列数据
 c = 5; // 列数
 for (index in bookMarkList) {
@@ -106,7 +107,7 @@ for (index in bookMarkList) {
 	}
 	bookMarkList[index] = newBookMarkList
 }
-
+*/
 blockMarkObj = document.createDocumentFragment();
 for (i in bookMarkList) {
 	itemObj = document.createElement("div");
