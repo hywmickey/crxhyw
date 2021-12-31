@@ -133,6 +133,9 @@ function bdfypage() {
     // 删除页面右边广告
     var transOtherRight = document.querySelector("#transOtherRight")
     transOtherRight.parentNode.removeChild(transOtherRight);
+    var transRight = document.querySelector("#main-outer > div > div > div.translate-wrap > div.translateio > div.translate-main.clearfix > div.trans-right");
+    transRight.style.float = "none";
+    
 }
 
 // 百度搜索页面处理
