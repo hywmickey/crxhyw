@@ -135,6 +135,9 @@ function bdfypage() {
     transOtherRight.parentNode.removeChild(transOtherRight);
     var transRight = document.querySelector("#main-outer > div > div > div.translate-wrap > div.translateio > div.translate-main.clearfix > div.trans-right");
     transRight.style.float = "none";
+    var transLeft = document.querySelector("#main-outer > div > div > div.translate-wrap > div.translateio > div.translate-main.clearfix > div.trans-left");
+    transLeft.style.float = "none";
+    //transRight.style.clear = "both";
     
 }
 
