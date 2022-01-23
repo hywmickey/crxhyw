@@ -48,7 +48,9 @@ bookMarkList = [
 		["图形计算器", "https://www.desmos.com/calculator?lang=zh-CN"],
 		["GitHub中文社区", "https://www.githubs.cn/"],
 		["古董电脑室", "https://zhuanlan.zhihu.com/retrocomputing"],
-		["GitOpt", "./html/gitopt.html"]
+		["compiler explorer", "https://gcc.godbolt.org"],
+		["GitOpt", "./html/gitopt.html"],
+		["goland Activation", "http://www.lookdiv.com/"]
 	],
 	[
 		["Algorithms", "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html"],
