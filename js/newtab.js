@@ -58,7 +58,7 @@ bookMarkList = [
 		["EF", "https://www.ef.com/wwen/english-resources/"]
 	],
 	[
-		["早时光书屋", "https://nt-registrar.zuoyebang.cc/static/fe-store-mis/#/store/store-list"],
+		["早时光书屋", "https://calmis.zuoyebang.cc/static/fe-store-qiankun/#/home/index"],
 		["天火平台", "https://tianhuo.zuoyebang.cc/"],
 		["监控平台", "http://op.zuoyebang.cc/static/odin/#/monitor/graph"],
 		["棒棒堂", "http://www.zuoyebang.cc"],
