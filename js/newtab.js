@@ -50,7 +50,8 @@ bookMarkList = [
 		["古董电脑室", "https://zhuanlan.zhihu.com/retrocomputing"],
 		["compiler explorer", "https://gcc.godbolt.org"],
 		["GitOpt", "./html/gitopt.html"],
-		["goland Activation", "http://www.lookdiv.com/"]
+		["goland Activation", "http://www.lookdiv.com/"],
+		["ssyoutube","https://zh.ssyoutube.com/"]
 	],
 	[
 		["Algorithms", "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html"],
