@@ -1,5 +1,13 @@
 bookMarkList = [
 	[
+		["早时光书屋", "https://calmis.zuoyebang.cc/static/fe-store-qiankun/#/home/index"],
+		["天火平台", "https://tianhuo.zuoyebang.cc/"],
+		["监控平台", "http://op.zuoyebang.cc/static/odin/#/monitor/graph"],
+		["grafana监控", "https://grafana-inf.zuoyebang.cc/grafana/d/KoprN1-nk/ntsell-shou-mai-fu-wu-jian-kong?orgId=1"],
+		["棒棒堂", "http://www.zuoyebang.cc"],
+		["HR", "http://hr.zuoyebang.cc"]
+	],
+	[
 		["Mooc", "https://www.icourse163.org/"],
 		["bilibili", "https://space.bilibili.com/456882810/favlist?fid=963174610&ftype=create"],
 		["Linux Man", "https://man7.org/linux/man-pages/index.html"],
@@ -59,13 +67,6 @@ bookMarkList = [
 		["algorithm", "https://algorithm-visualizer.org/"],
 		["redisTry", "https://try.redis.io/"],
 		["EF", "https://www.ef.com/wwen/english-resources/"]
-	],
-	[
-		["早时光书屋", "https://calmis.zuoyebang.cc/static/fe-store-qiankun/#/home/index"],
-		["天火平台", "https://tianhuo.zuoyebang.cc/"],
-		["监控平台", "http://op.zuoyebang.cc/static/odin/#/monitor/graph"],
-		["棒棒堂", "http://www.zuoyebang.cc"],
-		["HR", "http://hr.zuoyebang.cc"]
 	],
 	[
 		["便签", "https://yun.smartisan.com/#/notes"],
