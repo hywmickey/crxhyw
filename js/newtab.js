@@ -25,6 +25,7 @@ bookMarkList = [
 		["MBA智库百科", "https://www.mbalib.com/"],
 		["爱课程", "https://www.icourses.cn/"],
 		["linux265", "https://linux265.com/"],
+		["64k动画", "https://www.pouet.net/"],
 		["搜榜", "https://www.bjsoubang.com/"]
 	],
 	[
