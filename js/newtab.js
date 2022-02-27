@@ -50,6 +50,7 @@ bookMarkList = [
 		["讯飞快读", "https://www.ffkuaidu.com/"],
 		["vocabulary", "https://www.vocabulary.com/"],
 		["全历史", "https://www.allhistory.com/"],
+		["真实地图", "https://thetruesize.com/"],
 		["bejson", "https://www.bejson.com/"],
 		["statcounter", "http://gsa.statcounter.com/"],
 		["aliWebmin", "http://47.94.137.24:10000/"],
