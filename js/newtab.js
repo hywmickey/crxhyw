@@ -12,7 +12,7 @@ bookMarkList = [
 		["bilibili", "https://space.bilibili.com/456882810/favlist?fid=963174610&ftype=create"],
 		["Linux系统编程", "https://www.bilibili.com/video/BV1gb411L7fK"],
 		["深入理解计算机系统", "https://www.bilibili.com/video/BV1Gf4y1H71W"],
-		["Linux Man", "https://man7.org/linux/man-pages/index.html"],
+		["Linux Man", "https://www.kernel.org/doc/man-pages/"],
 		["网页配色", "http://tool.c7sky.com/webcolor/#character_3"],
 		["CSDN", "https://blog.csdn.net/nav/watchers"],
 		["李文周的博客", "https://www.liwenzhou.com/"],
