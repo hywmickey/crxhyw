@@ -9,6 +9,7 @@ bookMarkList = [
 		["ToolsFun", "https://tools.fun/"]
 	],
 	[
+		["Oxford", "https://www.oxfordlearnersdictionaries.com/"],
 		["Mooc", "https://www.icourse163.org/"],
 		["bilibili", "https://space.bilibili.com/456882810/favlist?fid=963174610&ftype=create"],
 		["Linux系统编程", "https://www.bilibili.com/video/BV1gb411L7fK"],
@@ -28,6 +29,7 @@ bookMarkList = [
 		["divcss5", "http://www.divcss5.com/"],
 		["leetcode", "https://leetcode.com/"],
 		["Linux From Scratch", "https://www.linuxfromscratch.org/lfs/read.html"],
+		["Unix Tutorial", "https://rc.byu.edu/documentation/unix-tutorial/"],
 		["bstTrends", "https://www.federalreserve.gov/monetarypolicy/bst_recenttrends.htm"],
 		["spglobal", "https://www.spglobal.com/"],
 		["berkshire", "https://www.cnbc.com/berkshire-hathaway-portfolio/"],
