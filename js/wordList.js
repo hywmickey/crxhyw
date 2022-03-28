@@ -5970,5 +5970,25 @@ aObj.href = "https://fanyi.baidu.com/#en/zh/"+worldList[randomKey][1];
 aObj.target="_blank";
 pObj.appendChild(aObj);
 
+spanObj = document.createElement("span");
+spanObj.textContent = " ";
+pObj.appendChild(spanObj);
+
+aObj = document.createElement("a");
+aObj.text = "->oxford";
+aObj.href = "https://www.oxfordlearnersdictionaries.com/definition/english/"+worldList[randomKey][0];
+aObj.target="_blank";
+pObj.appendChild(aObj);
+
+spanObj = document.createElement("span");
+spanObj.textContent = " ";
+pObj.appendChild(spanObj);
+
+aObj = document.createElement("a");
+aObj.text = "->ldoce";
+aObj.href = "https://www.ldoceonline.com/dictionary/"+worldList[randomKey][1];
+aObj.target="_blank";
+pObj.appendChild(aObj);
+
 worldBox.appendChild(pObj);
 
