@@ -5964,7 +5964,7 @@ pObj = document.createElement("p");
 
 aObj = document.createElement("a");
 aObj.text = worldList[randomKey][1];
-aObj.href = "https://www.oxfordlearnersdictionaries.com/definition/english/"+worldList[randomKey][0];
+//aObj.href = "https://www.oxfordlearnersdictionaries.com/definition/english/"+worldList[randomKey][0];
 // aObj.href = "https://www.ldoceonline.com/dictionary/"+worldList[randomKey][1];
 aObj.href = "https://fanyi.baidu.com/#en/zh/"+worldList[randomKey][1];
 aObj.target="_blank";
