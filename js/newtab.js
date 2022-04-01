@@ -1,6 +1,8 @@
 bookMarkList = [
 	[
 		["早时光书屋", "https://calmis-base-cc.suanshubang.cc//static/fe-store-qiankun/#/home/index"],
+		["早时光书屋", "https://calmis.zuoyebang.cc/static/fe-store-qiankun/#/micro-app-mis/student/ty-selection-period"],
+		["售卖sku查询", "http://sellmis.zuoyebang.cc/static/sellgoods/index.html#/goods/goods-manage/sku-manage-list"],
 		["天火平台", "https://tianhuo.zuoyebang.cc/"],
 		["监控平台", "http://op.zuoyebang.cc/static/odin/#/monitor/graph"],
 		["grafana监控", "https://grafana-inf.zuoyebang.cc/grafana/d/KoprN1-nk/ntsell-shou-mai-fu-wu-jian-kong?orgId=1"],
