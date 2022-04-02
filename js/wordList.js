@@ -5990,5 +5990,25 @@ aObj.href = "https://www.ldoceonline.com/dictionary/"+worldList[randomKey][1];
 aObj.target="_blank";
 pObj.appendChild(aObj);
 
+spanObj = document.createElement("span");
+spanObj.textContent = " ";
+pObj.appendChild(spanObj);
+
+aObj = document.createElement("a");
+aObj.text = "->collins";
+aObj.href = "https://www.collinsdictionary.com/dictionary/english/"+worldList[randomKey][1];
+aObj.target="_blank";
+pObj.appendChild(aObj);
+
+spanObj = document.createElement("span");
+spanObj.textContent = " ";
+pObj.appendChild(spanObj);
+
+aObj = document.createElement("a");
+aObj.text = "->bing";
+aObj.href = "https://cn.bing.com/images/search?q="+worldList[randomKey][1];
+aObj.target="_blank";
+pObj.appendChild(aObj);
+
 worldBox.appendChild(pObj);
 
