@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style type="text/css">
 
@@ -23,16 +22,16 @@
             background-color: #222;
         }
 
-        .top span {
-            text-align: center;
-            color: white;
-            font-size: 32px;
-            width: 225px;
+        .top li {
             display: inline-block;
-        }
-
-        .top .timeout{
-            color: red;
+            text-align: center;
+            width: 150px;
+            margin: 5px;
+            padding: 5px 0px;
+            font-size: 18px;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
         }
 
         .items {
@@ -42,15 +41,22 @@
 
         }
 
-        .items p{
+        .items p {
             display: inline-block;
             text-align: center;
             width: 150px;
-            margin: 10px;
+            margin: 5px 15px;
             padding: 5px 0px;
             font-size: 18px;
             background: #333;
         }
+
+        #contentArea {
+            margin: 5px auto;
+            width: 900px;
+            background-color: #000;
+        }
+
 
         .bottom p, .top p {
             color: white;
@@ -61,11 +67,23 @@
 
 </head>
 <body>
-    <!--<div class="top"></div>-->
-    <div id="bookmarks"></div>
+    <div  class="top">
+        <ul>
+            <li id="commTab">常用书签</li>
+            <li id="wordStudy">WordQuiz</li>
+            <li id="todo">TODO</li>
+            <li id="studyList">学习资料</li>
+            <li></li>
+        </ul>
+    </div>
+    <div id="contentArea"></div>
+
     <div class="bottom"></div>
     
 </body>
-<script type="text/javascript" src="js/newtab.js"></script>
+<script type="text/javascript" src="js/commTab.js"></script>
 <script type="text/javascript" src="js/wordList.js"></script>
+<script type="text/javascript" src="js/todo.js"></script>
+<script type="text/javascript" src="js/studyList.js"></script>
+<script type="text/javascript" src="js/newtab.js"></script>
 </html>
