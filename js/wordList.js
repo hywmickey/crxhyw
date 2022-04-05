@@ -5949,8 +5949,10 @@ function wordStudy() {
         ["zero_1","zero","number"],
         ["zone_1","zone","noun"]
     ];
-    randomNo = Math.random();
-    randomKey = parseInt(randomNo*10000)%worldList.length;
+
+    
+
+
     //console.log(worldList[randomKey]);
     
     //worldBox = document.getElementsByClassName("bottom")[0];
@@ -5959,66 +5961,87 @@ function wordStudy() {
 	contentAreaDiv.innerHTML = "";
 
     worldBox = document.createElement("div");
-    worldBox.setAttribute("class","bottom")
-    pObj = document.createElement("p");
+    worldBox.style.fontSize="24px";
+    //worldBox.setAttribute("class","bottom")
+
+    lastRandomNo = 0;
+    for (i = 0; i< 10; i++) {
+        randomNo = Math.random();
+        randomKey = (parseInt(randomNo*10000)+lastRandomNo)%worldList.length;
+        lastRandomNo += randomKey;
+        
+
+
+        pObj = document.createElement("p");
     
-    // spanObj = document.createElement("span");
-    // spanObj.textContent = worldList[randomKey][1];
-    // pObj.appendChild(spanObj);
+
+
+        spanObj = document.createElement("a");
+        spanObj.textContent = worldList[randomKey][1];
+        spanObj.style.color = "#fff";
     
-    // spanObj = document.createElement("span");
-    // pObj.appendChild(spanObj);
+
+        pObj.appendChild(spanObj);
+        
+        spanObj = document.createElement("span");
+        spanObj.textContent = " ";
+        pObj.appendChild(spanObj);
+
+
+        aObj = document.createElement("a");
+        aObj.text = "->baidu";
     
-    aObj = document.createElement("a");
-    aObj.text = worldList[randomKey][1];
-    //aObj.href = "https://www.oxfordlearnersdictionaries.com/definition/english/"+worldList[randomKey][0];
-    // aObj.href = "https://www.ldoceonline.com/dictionary/"+worldList[randomKey][1];
-    aObj.href = "https://fanyi.baidu.com/#en/zh/"+worldList[randomKey][1];
-    aObj.target="_blank";
-    pObj.appendChild(aObj);
-    
-    spanObj = document.createElement("span");
-    spanObj.textContent = " ";
-    pObj.appendChild(spanObj);
-    
-    aObj = document.createElement("a");
-    aObj.text = "->oxford";
-    aObj.href = "https://www.oxfordlearnersdictionaries.com/definition/english/"+worldList[randomKey][0];
-    aObj.target="_blank";
-    pObj.appendChild(aObj);
-    
-    spanObj = document.createElement("span");
-    spanObj.textContent = " ";
-    pObj.appendChild(spanObj);
-    
-    aObj = document.createElement("a");
-    aObj.text = "->ldoce";
-    aObj.href = "https://www.ldoceonline.com/dictionary/"+worldList[randomKey][1];
-    aObj.target="_blank";
-    pObj.appendChild(aObj);
-    
-    spanObj = document.createElement("span");
-    spanObj.textContent = " ";
-    pObj.appendChild(spanObj);
-    
-    aObj = document.createElement("a");
-    aObj.text = "->collins";
-    aObj.href = "https://www.collinsdictionary.com/dictionary/english/"+worldList[randomKey][1];
-    aObj.target="_blank";
-    pObj.appendChild(aObj);
-    
-    spanObj = document.createElement("span");
-    spanObj.textContent = " ";
-    pObj.appendChild(spanObj);
-    
-    aObj = document.createElement("a");
-    aObj.text = "->bing";
-    aObj.href = "https://cn.bing.com/images/search?q="+worldList[randomKey][1];
-    aObj.target="_blank";
-    pObj.appendChild(aObj);
-    
-    worldBox.appendChild(pObj);
-    
+        aObj.href = "https://fanyi.baidu.com/#en/zh/"+worldList[randomKey][1];
+        aObj.target="_blank";
+        pObj.appendChild(aObj);
+        
+        spanObj = document.createElement("span");
+        spanObj.textContent = " ";
+        pObj.appendChild(spanObj);
+        
+        aObj = document.createElement("a");
+        aObj.text = "->oxford";
+        aObj.href = "https://www.oxfordlearnersdictionaries.com/definition/english/"+worldList[randomKey][0];
+        aObj.target="_blank";
+        pObj.appendChild(aObj);
+        
+        spanObj = document.createElement("span");
+        spanObj.textContent = " ";
+        pObj.appendChild(spanObj);
+        
+        aObj = document.createElement("a");
+        aObj.text = "->ldoce";
+        aObj.href = "https://www.ldoceonline.com/dictionary/"+worldList[randomKey][1];
+        aObj.target="_blank";
+        pObj.appendChild(aObj);
+        
+        spanObj = document.createElement("span");
+        spanObj.textContent = " ";
+        pObj.appendChild(spanObj);
+        
+        aObj = document.createElement("a");
+        aObj.text = "->collins";
+        aObj.href = "https://www.collinsdictionary.com/dictionary/english/"+worldList[randomKey][1];
+        aObj.target="_blank";
+        pObj.appendChild(aObj);
+        
+        spanObj = document.createElement("span");
+        spanObj.textContent = " ";
+        pObj.appendChild(spanObj);
+        
+        aObj = document.createElement("a");
+        aObj.text = "->bing";
+        aObj.href = "https://cn.bing.com/images/search?q="+worldList[randomKey][1];
+        aObj.target="_blank";
+        pObj.appendChild(aObj);
+        
+        worldBox.appendChild(pObj);
+        
+
+
+    }
+
+
     contentAreaDiv.appendChild(worldBox);
     
 }
