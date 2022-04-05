@@ -5962,6 +5962,9 @@ function wordStudy() {
 
     worldBox = document.createElement("div");
     worldBox.style.fontSize="24px";
+    worldBox.style.paddingTop="1px";
+    worldBox.style.paddingLeft="15px";
+    worldBox.style.backgroundColor="#222"
     //worldBox.setAttribute("class","bottom")
 
     lastRandomNo = 0;
@@ -5970,12 +5973,8 @@ function wordStudy() {
         randomKey = (parseInt(randomNo*10000)+lastRandomNo)%worldList.length;
         lastRandomNo += randomKey;
         
-
-
         pObj = document.createElement("p");
     
-
-
         spanObj = document.createElement("a");
         spanObj.textContent = worldList[randomKey][1];
         spanObj.style.color = "#fff";
