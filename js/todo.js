@@ -15,6 +15,8 @@ function todo() {
     inputObj.onchange = todoAdd;
     inputObj.style.width="600px";
     inputObj.style.fontSize = "32px";
+    //inputObj.style.backgroundColor = "#aaa";
+    //inputObj.style.color = "#fff";
     // addButton = document.createElement("button");
     // addButton.textContent="添加";
     // addButton.onclick=todoAdd;
