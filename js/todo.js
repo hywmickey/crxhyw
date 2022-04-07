@@ -40,7 +40,7 @@ function todoAdd(){
     inputObj = document.getElementById("todoInput");
 
     if (inputObj.value.length > 0) {
-        todoToDiv(inputObj.value);
+        todoToDiv(-1,inputObj.value);
         todoToStorage(inputObj.value);
 
         inputObj.value="";
@@ -48,16 +48,85 @@ function todoAdd(){
 
 }
 
+function todoUp(e) {
+
+    parentObj = e.target.parentNode;
+
+    dataNo = parseInt(parentObj.getAttribute('data-no'));
+    
+    // 避免越界
+    if (dataNo == 0) {
+        return
+    }
+
+    // 当前todo的内容
+    curTodo = parentObj.parentNode.childNodes[dataNo];
+    curTodoText = curTodo.getElementsByTagName("span")[0].textContent;
+    //console.log( curTodo,curTodo.getElementsByTagName("span")[0].textContent);
+    // 上个todo的内容
+    preTodo = parentObj.parentNode.childNodes[dataNo-1];
+    
+    // 交换两个todo的内容
+    curTodo.getElementsByTagName("span")[0].textContent = preTodo.getElementsByTagName("span")[0].textContent;
+
+    preTodo.getElementsByTagName("span")[0].textContent = curTodoText;
+
+    // 保存顺序
+    todoContentList = [];
+    for(i = 0; i < parentObj.parentNode.childElementCount; i++) {
+        todoContentList.push(parentObj.parentNode.childNodes[i].getElementsByTagName("span")[0].textContent);
+    }
+    // 存储数据
+    localStorage.setItem("todoList",JSON.stringify(todoContentList));
+    
+}
+
+
+function todoDown(e) {
+    parentObj = e.target.parentNode;
+
+    dataNo = parseInt(parentObj.getAttribute('data-no'));
+    
+    // 避免越界
+    if (dataNo == parentObj.parentNode.childElementCount-1) {
+        return
+    }
+
+    // 当前todo的内容
+    curTodo = parentObj.parentNode.childNodes[dataNo];
+    curTodoText = curTodo.getElementsByTagName("span")[0].textContent;
+    //console.log( curTodo,curTodo.getElementsByTagName("span")[0].textContent);
+    // 下个todo的内容
+    nextTodo = parentObj.parentNode.childNodes[dataNo+1];
+    
+    // 交换两个todo的内容
+    curTodo.getElementsByTagName("span")[0].textContent = nextTodo.getElementsByTagName("span")[0].textContent;
+
+    nextTodo.getElementsByTagName("span")[0].textContent = curTodoText;
+
+    // 保存顺序
+    todoContentList = [];
+    for(i = 0; i < parentObj.parentNode.childElementCount; i++) {
+        todoContentList.push(parentObj.parentNode.childNodes[i].getElementsByTagName("span")[0].textContent);
+    }
+    // 存储数据
+    localStorage.setItem("todoList",JSON.stringify(todoContentList));
+    
+}
+
 function todoDel(e){
     parentObj = e.target.parentNode;
     
     todoContent = parentObj.getElementsByTagName("span")[0].textContent;
-    console.log(todoContent);
-    parentObj.remove(e.target);
-    todoToDel(todoContent);
-    //console.log(e.target.parentNode);
+    
+    if(confirm("确定删除【"+todoContent+"】吗？")){
+        //console.log(todoContent);
+        parentObj.remove(e.target);
+        todoToDel(todoContent);
+    }
     
 
+    //console.log(e.target.parentNode);
 }
 
 function todoInitList(){
@@ -70,30 +139,53 @@ function todoInitList(){
 
         for(i in localTodoList) {
             //console.log(i,localTodoList[i]);
-            todoToDiv(localTodoList[i]);
+            todoToDiv(i,localTodoList[i]);
         }
 
     }
 }
 
-function todoToDiv(strContent){
+function todoToDiv(orderNo, strContent){
     todoListDiv = document.getElementById("todoList");
 
     todoListDiv.style.marginTop = "20px";
     todoItemDiv = document.createElement("div");
     todoItemDiv.style.padding = "5px";
 
-    pObj = document.createElement("span");
-    pObj.textContent = strContent
+    if (orderNo <=0 ) {
+        orderNo=todoListDiv.childElementCount;
+    }
+
+    todoItemDiv.setAttribute("data-no", orderNo);
+
+    textObj = document.createElement("span");
+    textObj.textContent = strContent;
+    textObj.style.width="600px";
+    textObj.style.display="inline-block";
+
+    todoItemDiv.appendChild(textObj);
+
+
+    upOpt = document.createElement("span");
+    upOpt.textContent = " ↑ ";
+    //upOpt.style.margin="1em";
+    upOpt.style.cursor = "pointer";
+    upOpt.onclick = todoUp
+    todoItemDiv.appendChild(upOpt);
+
+    downOpt = document.createElement("span");
+    downOpt.textContent = " ↓ ";
+    //downOpt.style.margin="1em";
+    downOpt.style.cursor = "pointer";
+    downOpt.onclick = todoDown
+    todoItemDiv.appendChild(downOpt);
+
 
     delOpt = document.createElement("span");
-    delOpt.textContent = "×";
-    delOpt.style.margin="1em";
+    delOpt.textContent = " × ";
+    //delOpt.style.margin="1em";
     delOpt.style.cursor = "pointer";
     delOpt.onclick = todoDel
-    
-
-    todoItemDiv.appendChild(pObj);
     todoItemDiv.appendChild(delOpt);
 
     todoListDiv.appendChild(todoItemDiv);
@@ -130,7 +222,7 @@ function todoToDel(strContent){
     for (i in localTodoList) {
         if (strContent == localTodoList[i]) {
             //localTodoList.remove(strContent);
-            console.log(strContent,  localTodoList[i]);
+            //console.log(strContent,  localTodoList[i]);
         } else {
             localTodoListNew.push(localTodoList[i]);
         }
