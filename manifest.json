@@ -46,6 +46,11 @@
         // 覆盖浏览器默认的新标签页
         "newtab": "/html/newtab.html"
     },
-	"options_page" :"/html/options.html"
+	//"options_page" :"/html/options.html",
+	"options_ui": {
+		"page": "/html/options.html",
+		"open_in_tab": false
+	  }
+
 
 }

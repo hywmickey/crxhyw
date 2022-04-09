@@ -1,39 +1,126 @@
 function todo() {
-    //alert("todo");
-
 	contentAreaDiv = document.getElementById("contentArea");
 	contentAreaDiv.innerHTML = "";
 
     todoDiv = document.createElement("div");
     todoDiv.style.backgroundColor="#222";
     todoDiv.setAttribute("class","todo");
-    todoDiv.style.paddingTop="10px";
-    todoDiv.style.paddingLeft="100px";
-    
+    //todoDiv.style.paddingTop="10px";
+    todoDiv.style.padding="10px 50px";
+    contentAreaDiv.appendChild(todoDiv);
+
     inputObj = document.createElement("input");
     inputObj.setAttribute("id","todoInput");
     inputObj.onchange = todoAdd;
-    inputObj.style.width="600px";
+    inputObj.style.width="660px";
     inputObj.style.fontSize = "32px";
-    //inputObj.style.backgroundColor = "#aaa";
-    //inputObj.style.color = "#fff";
-    // addButton = document.createElement("button");
-    // addButton.textContent="添加";
-    // addButton.onclick=todoAdd;
+    todoDiv.appendChild(inputObj);
+    
+    aObj = document.createElement("button");
+    aObj.textContent ="批量编辑";
+    aObj.style.backgroundColor = "#000";
+    aObj.style.color="#fff";
+    aObj.style.fontSize = "24px";
+    aObj.style.marginLeft="5px";
+    aObj.style.display="inline-box";
+    aObj.onclick = todoEditBatch;
+    todoDiv.appendChild(aObj);
 
     todoListDiv = document.createElement("div");
     todoListDiv.setAttribute("id","todoList");
     todoListDiv.style.color="white";
-    todoListDiv.style.fontSize="24px";
+    todoListDiv.style.fontSize="20px";
     
-
-    todoDiv.appendChild(inputObj);
-    //todoDiv.appendChild(addButton);
     todoDiv.appendChild(todoListDiv);
-    contentAreaDiv.appendChild(todoDiv);
-
     todoInitList(); // 初始化todo列表
 
+}
+
+function todoEditBatch() {
+    todoStorageKey = "todoList";
+    localTodoList = [];
+    localTodoListJson = localStorage.getItem(todoStorageKey)
+    if (localTodoListJson.length > 0) {
+        localTodoList = JSON.parse(localTodoListJson);
+    }
+    //console.log(localTodoList.join("\n"));
+
+    contentAreaDiv = document.getElementById("contentArea");
+
+    editDivObj = document.createElement("div");
+    editDivObj.style.width = (contentAreaDiv.offsetWidth-100)+"px";
+    editDivObj.style.height = contentAreaDiv.offsetHeight+"px";
+    editDivObj.style.backgroundColor = "yellow";
+    editDivObj.style.position = "absolute";
+    editDivObj.style.left="50px";
+    editDivObj.style.top="60px";
+    //editDivObj.style.zIndex=1;
+
+
+    editEreaObj = document.createElement("textarea");
+    editEreaObj.setAttribute("id","todoBatchEdit");
+    editEreaObj.style.display="block";
+    editEreaObj.style.width=(contentAreaDiv.offsetWidth-110)+"px";
+    editEreaObj.style.height=(contentAreaDiv.offsetHeight)+"px";
+    editEreaObj.style.margin="0 auto";
+    editEreaObj.style.color="#fff";
+    editEreaObj.style.backgroundColor="#000";
+    editEreaObj.style.fontSize="20px";
+    editEreaObj.value = "\n\n"+localTodoList.join("\n\n")+"\n\n";
+    editDivObj.appendChild(editEreaObj);
+
+    saveButtonObj = document.createElement("button");
+    saveButtonObj.textContent = "保存";
+    saveButtonObj.onclick = todoEditBatchSave;
+    saveButtonObj.style.position="relative";
+    saveButtonObj.style.top = "10px";
+    saveButtonObj.style.right = (contentAreaDiv.offsetWidth*-1+150)+"px";
+    saveButtonObj.style.color="#fff";
+    saveButtonObj.style.backgroundColor="#000";
+    saveButtonObj.style.fontSize="18px";
+
+    editDivObj.appendChild(saveButtonObj);
+    cancelButtonObj = document.createElement("button");
+    cancelButtonObj.textContent = "取消";
+    cancelButtonObj.onclick = todoEditBatchCancel;
+
+    cancelButtonObj.style.position="relative";
+    cancelButtonObj.style.top = "10px";
+    cancelButtonObj.style.right = (contentAreaDiv.offsetWidth*-1+260)+"px";
+    cancelButtonObj.style.color="#fff";
+    cancelButtonObj.style.backgroundColor="#000";
+    cancelButtonObj.style.fontSize="18px";
+
+    editDivObj.appendChild(cancelButtonObj);
+    contentAreaDiv.appendChild(editDivObj);
+}
+
+function todoEditBatchCancel(){
+    textAreaObj = document.getElementById("todoBatchEdit");
+    textAreaObj.parentNode.remove(textAreaObj);// 删除批量编辑浮层
+}
+
+function todoEditBatchSave(){
+
+    textAreaObj = document.getElementById("todoBatchEdit");
+    // alert(textAreaObj.value.split("\n"));
+    contentList = textAreaObj.value.split("\n");
+
+    newTodoList = [];
+    for(var i = 0; i < contentList.length; i++) {
+        console.log(contentList[i]);
+
+        lineContent = contentList[i].trim();
+        if (lineContent.length > 0 ) {
+            newTodoList.push(lineContent);
+        }
+    }
+    //console.log(newTodoList);
+    // 保存数据
+    localStorage.setItem("todoList",JSON.stringify(newTodoList));
+    //console.log(textAreaObj.parentNode);
+    textAreaObj.parentNode.remove(textAreaObj);// 删除批量编辑浮层
+    todoInitList();
 }
 
 function todoAdd(){
@@ -45,7 +132,6 @@ function todoAdd(){
 
         inputObj.value="";
     }
-
 }
 
 function todoUp(e) {
@@ -124,7 +210,8 @@ function todoDel(e){
         parentObj.remove(e.target);
         todoToDel(todoContent);
     }
-    
+
+    todoInitList();
 
     //console.log(e.target.parentNode);
 }
@@ -136,6 +223,8 @@ function todoInitList(){
     //console.log(localTodoListJson,localTodoListJson == null, typeof(localTodoListJson));
     if ( typeof(localTodoListJson) == "string" && localTodoListJson.length > 0) {
         localTodoList = JSON.parse(localTodoListJson);
+
+        document.getElementById("todoList").innerHTML="";// 清空原始数据
 
         for(i in localTodoList) {
             //console.log(i,localTodoList[i]);
@@ -156,11 +245,17 @@ function todoToDiv(orderNo, strContent){
         orderNo=todoListDiv.childElementCount;
     }
 
+    if (orderNo%2==0) {
+        todoItemDiv.style.backgroundColor="#000";
+    } else {
+        todoItemDiv.style.backgroundColor="#333";
+    }
+
     todoItemDiv.setAttribute("data-no", orderNo);
 
     textObj = document.createElement("span");
     textObj.textContent = strContent;
-    textObj.style.width="600px";
+    textObj.style.width="700px";
     textObj.style.display="inline-block";
 
     todoItemDiv.appendChild(textObj);
