@@ -50,7 +50,7 @@ function todoEditBatch() {
     editDivObj = document.createElement("div");
     editDivObj.style.width = (contentAreaDiv.offsetWidth-100)+"px";
     editDivObj.style.height = contentAreaDiv.offsetHeight+"px";
-    editDivObj.style.backgroundColor = "yellow";
+    //editDivObj.style.backgroundColor = "yellow";
     editDivObj.style.position = "absolute";
     editDivObj.style.left="50px";
     editDivObj.style.top="60px";
@@ -108,8 +108,6 @@ function todoEditBatchSave(){
 
     newTodoList = [];
     for(var i = 0; i < contentList.length; i++) {
-        console.log(contentList[i]);
-
         lineContent = contentList[i].trim();
         if (lineContent.length > 0 ) {
             newTodoList.push(lineContent);
