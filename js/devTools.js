@@ -95,11 +95,11 @@ function devTools() {
     urlStr = 'https://fanyi.baidu.com/#zh/en/%E5%BC%A0%E4%B8%89';
 
     labelObj = document.createElement("label");
-    labelObj.textContent ="URL:";
+    labelObj.textContent ="URI:";
 
     inputObj = document.createElement("input");
     inputObj.value = urlStr;
-    inputObj.style.width="600px";
+    inputObj.style.width="850px";
     inputObj.onchange = devToolsUriDecode;
     //inputObj.onchange = devToolsTimeStampToTime
     labelObj.appendChild(inputObj);
