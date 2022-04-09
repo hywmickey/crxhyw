@@ -20,6 +20,7 @@
             width: 900px;
             height: 50px;
             background-color: #222;
+            position: relative;
         }
 
         .top li {
@@ -59,16 +60,33 @@
         }
 
 
-        .bottom p, .top p {
+ 
+        .top p {
             color: white;
             text-align: center;
             font-size: 32px;
+            
         }
+        .bottom {
+            margin: 5px auto;
+            position: relative;
+            width: 900px;
+        }
+
+        #setting {
+            position: absolute;
+            z-index: 1;
+            right: -50px;
+            color: white;
+            background-color: #000;
+        }
+        
     </style>
 
 </head>
 <body>
     <div  class="top">
+        <button id="setting">配置</button>
         <ul>
             <li id="commTab">常用书签</li>
             <li id="wordStudy">WordQuiz</li>
@@ -79,7 +97,10 @@
     </div>
     <div id="contentArea"></div>
 
-    <div class="bottom"></div>
+    <div class="bottom">
+        
+    </div>
+    
     
 </body>
 <script type="text/javascript" src="/js/commTab.js"></script>

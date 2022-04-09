@@ -6,7 +6,6 @@ document.getElementById("devTools").onclick = devTools;
 
 
 chrome.storage.sync.get({defaultPage:""},function(items){
-
     switch (items.defaultPage){
         case "commTab":
             commTab();
@@ -27,4 +26,13 @@ chrome.storage.sync.get({defaultPage:""},function(items){
             commTab();
     }
 })
+
+
+document.querySelector('#setting').addEventListener('click', function() {
+    if (chrome.runtime.openOptionsPage) {
+      chrome.runtime.openOptionsPage();
+    } else {
+      window.open(chrome.runtime.getURL('options.html'));
+    }
+  });
 

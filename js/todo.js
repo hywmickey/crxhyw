@@ -14,6 +14,7 @@ function todo() {
     inputObj.onchange = todoAdd;
     inputObj.style.width="660px";
     inputObj.style.fontSize = "32px";
+    inputObj.setAttribute("placeholder","请添加一个todo吧");
     todoDiv.appendChild(inputObj);
     
     aObj = document.createElement("button");
@@ -61,7 +62,10 @@ function todoEditBatch() {
     editEreaObj.setAttribute("id","todoBatchEdit");
     editEreaObj.style.display="block";
     editEreaObj.style.width=(contentAreaDiv.offsetWidth-110)+"px";
-    editEreaObj.style.height=(contentAreaDiv.offsetHeight)+"px";
+    
+    editEreaObjHeight = contentAreaDiv.offsetHeight > 500? 500:contentAreaDiv.offsetHeight ;
+
+    editEreaObj.style.height=editEreaObjHeight+"px";
     editEreaObj.style.margin="0 auto";
     editEreaObj.style.color="#fff";
     editEreaObj.style.backgroundColor="#000";
@@ -237,7 +241,7 @@ function todoToDiv(orderNo, strContent){
 
     todoListDiv.style.marginTop = "20px";
     todoItemDiv = document.createElement("div");
-    todoItemDiv.style.padding = "5px";
+    todoItemDiv.style.padding = "18px 5px";
 
     if (orderNo <=0 ) {
         orderNo=todoListDiv.childElementCount;
@@ -246,7 +250,7 @@ function todoToDiv(orderNo, strContent){
     if (orderNo%2==0) {
         todoItemDiv.style.backgroundColor="#000";
     } else {
-        todoItemDiv.style.backgroundColor="#333";
+        todoItemDiv.style.backgroundColor="#181818";
     }
 
     todoItemDiv.setAttribute("data-no", orderNo);

@@ -15,6 +15,7 @@ function devTools() {
     h3Obj = document.createElement("h3");
     h3Obj.textContent = "时间戳转换";
     h3Obj.style.backgroundColor="#222";
+    h3Obj.style.padding = "10px 5px";
     timestampToTimeDiv.appendChild(h3Obj);
 
     labelObj = document.createElement("label");
@@ -62,13 +63,14 @@ function devTools() {
 
     h3Obj = document.createElement("h3");
     h3Obj.style.backgroundColor="#222";
+    h3Obj.style.padding = "10px 5px";
     //spanObj.style.paddingLeft="5px";
     h3Obj.textContent = "json串格式化";
     jsonParseDiv.appendChild(h3Obj);
     
     textAreaObj =  document.createElement("textarea");
     textAreaObj.value=jsonStr;
-    textAreaObj.cols=100;
+    textAreaObj.cols=110;
     textAreaObj.onchange = devToolsJsonFormate;
 
     jsonParseDiv.appendChild(textAreaObj);
@@ -85,12 +87,12 @@ function devTools() {
     urlParseDiv =  document.createElement("div");
     h3Obj = document.createElement("h3");
     h3Obj.style.backgroundColor="#222";
+    h3Obj.style.padding = "10px 5px";
     //spanObj.style.paddingLeft="5px";
-    h3Obj.textContent = "URL解析";
+    h3Obj.textContent = "URI Decode";
     urlParseDiv.appendChild(h3Obj);
     
     urlStr = 'https://fanyi.baidu.com/#zh/en/%E5%BC%A0%E4%B8%89';
-
 
     labelObj = document.createElement("label");
     labelObj.textContent ="URL:";

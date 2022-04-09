@@ -5963,7 +5963,7 @@ function wordStudy() {
     worldBox = document.createElement("div");
     worldBox.style.fontSize="24px";
     worldBox.style.paddingTop="1px";
-    worldBox.style.paddingLeft="15px";
+    //worldBox.style.paddingLeft="15px";
     worldBox.style.backgroundColor="#222"
     //worldBox.setAttribute("class","bottom")
 
@@ -5974,6 +5974,13 @@ function wordStudy() {
         lastRandomNo += randomKey;
         
         pObj = document.createElement("p");
+        pObj.style.padding = "12px";
+        pObj.style.margin = "0px";
+        if (i%2 ==0) {
+            pObj.style.backgroundColor = "#333";
+        } else {
+            pObj.style.backgroundColor = "#000";
+        }
     
         spanObj = document.createElement("a");
         spanObj.textContent = worldList[randomKey][1];
