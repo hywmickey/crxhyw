@@ -37,13 +37,15 @@
 	// 权限申请
 	"permissions":
 	[
-		"contextMenus" // 右键菜单
+		"contextMenus", // 右键菜单
+		"storage"
 	],
 
 	"chrome_url_overrides":
     {
         // 覆盖浏览器默认的新标签页
-        "newtab": "newtab.html"
-    }
+        "newtab": "/html/newtab.html"
+    },
+	"options_page" :"/html/options.html"
 
 }
