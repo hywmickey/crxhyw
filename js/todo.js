@@ -17,15 +17,15 @@ function todo() {
     inputObj.setAttribute("placeholder","请添加一个todo吧");
     todoDiv.appendChild(inputObj);
     
-    aObj = document.createElement("button");
-    aObj.textContent ="批量编辑";
-    aObj.style.backgroundColor = "#000";
-    aObj.style.color="#fff";
-    aObj.style.fontSize = "24px";
-    aObj.style.marginLeft="5px";
-    aObj.style.display="inline-box";
-    aObj.onclick = todoEditBatch;
-    todoDiv.appendChild(aObj);
+    buttonObj = document.createElement("button");
+    buttonObj.textContent ="批量编辑";
+    buttonObj.style.backgroundColor = "#000";
+    buttonObj.style.color="#fff";
+    buttonObj.style.fontSize = "24px";
+    buttonObj.style.marginLeft="20px";
+    buttonObj.style.display="inline-box";
+    buttonObj.onclick = todoEditBatch;
+    todoDiv.appendChild(buttonObj);
 
     todoListDiv = document.createElement("div");
     todoListDiv.setAttribute("id","todoList");
@@ -63,7 +63,8 @@ function todoEditBatch() {
     editEreaObj.style.display="block";
     editEreaObj.style.width=(contentAreaDiv.offsetWidth-110)+"px";
     
-    editEreaObjHeight = contentAreaDiv.offsetHeight > 500? 500:contentAreaDiv.offsetHeight ;
+    //editEreaObjHeight = contentAreaDiv.offsetHeight > 500? 500:contentAreaDiv.offsetHeight ;
+    editEreaObjHeight = 500;
 
     editEreaObj.style.height=editEreaObjHeight+"px";
     editEreaObj.style.margin="0 auto";
