@@ -1,4 +1,202 @@
 function wordStudy() {
+    
+
+
+    //console.log(worldList[randomKey]);
+    
+    //wordBox = document.getElementsByClassName("bottom")[0];
+
+	contentAreaDiv = document.getElementById("contentArea");
+	contentAreaDiv.innerHTML = "";
+
+    wordBox = document.createElement("div");
+    wordBox.style.fontSize="20px";
+    wordBox.style.paddingTop="1px";
+    wordBox.setAttribute("id","wordBox");
+    //wordBox.style.paddingLeft="15px";
+    wordBox.style.backgroundColor="#222"
+    //wordBox.setAttribute("class","bottom")
+    contentAreaDiv.appendChild(wordBox);
+
+    // 添加例句
+
+
+    sentenceBlandAdd = document.createElement("div");
+    sentenceBlandAdd.setAttribute("id","sentenceBlandAdd");
+
+
+    
+    contentAreaDiv.appendChild(sentenceBlandAdd);
+
+
+    wordStudyQuiz();
+    wordStudySentenctAddRender();
+}
+
+function wordStudySentenctAddRender(){
+    sentenceBlandAdd = document.getElementById("sentenceBlandAdd");
+    sentenceBlandAdd.innerHTML = "";
+
+    sentenceBlandAdd.style.color = "white";
+    sentenceBlandAdd.style.backgroundColor = "#222";
+    sentenceBlandAdd.style.fontSize="18px";
+    sentenceBlandAdd.style.position = "relative";
+
+    buttonObj = document.createElement("button");
+    buttonObj.textContent = "例句回顾";
+    buttonObj.style.backgroundColor = "#000";
+    buttonObj.style.color = "white";
+    buttonObj.style.position = "absolute";
+    buttonObj.style.right = "0px";
+    buttonObj.onclick = function(e){wordSentenceBlank();};
+    sentenceBlandAdd.appendChild(buttonObj);
+
+    
+
+    h3Obj = document.createElement("h3");
+    h3Obj.textContent = "添加例句";
+    h3Obj.style.fontSize="26px";
+    h3Obj.style.backgroundColor = "#333";
+    h3Obj.style.padding = "5px 10px";
+    sentenceBlandAdd.appendChild(h3Obj);
+    
+    // 句子
+    labelObj = document.createElement("label");
+    spanObj = document.createElement("span");
+    spanObj.textContent ="英文: ";
+    spanObj.style.display="inline-block";
+    spanObj.style.width="100px";
+    spanObj.style.textAlign="right";
+    labelObj.appendChild(spanObj);
+    inputObj = document.createElement("input");
+    inputObj.setAttribute("size",100);
+    inputObj.setAttribute("id","enSentence");
+    labelObj.appendChild(inputObj);
+
+    
+
+    sentenceBlandAdd.appendChild(labelObj);
+    sentenceBlandAdd.appendChild(document.createElement("br"));
+    // 汉语
+    labelObj = document.createElement("label");
+    spanObj = document.createElement("span");
+    spanObj.textContent ="中文: ";
+    spanObj.style.display="inline-block";
+    spanObj.style.width="100px";
+    spanObj.style.textAlign="right";
+    labelObj.appendChild(spanObj);
+    inputObj = document.createElement("input");
+    inputObj.setAttribute("size",100);
+    inputObj.setAttribute("id","chinese");
+    labelObj.appendChild(inputObj);
+    sentenceBlandAdd.appendChild(labelObj);
+    sentenceBlandAdd.appendChild(document.createElement("br"));
+    // 单词
+    labelObj = document.createElement("label");
+    spanObj = document.createElement("span");
+    spanObj.textContent ="单词: ";
+    spanObj.style.display="inline-block";
+    spanObj.style.width="100px";
+    spanObj.style.textAlign="right";
+    labelObj.appendChild(spanObj);
+    inputObj = document.createElement("input");
+    inputObj.setAttribute("id","word");
+    //inputObj.setAttribute("size",100);
+    labelObj.appendChild(inputObj);
+    sentenceBlandAdd.appendChild(labelObj);
+    sentenceBlandAdd.appendChild(document.createElement("br"));
+    // 词性
+    labelObj = document.createElement("label");
+    spanObj = document.createElement("span");
+    spanObj.textContent ="词性: ";
+    spanObj.style.display="inline-block";
+    spanObj.style.width="100px";
+    spanObj.style.textAlign="right";
+    labelObj.appendChild(spanObj);
+
+    wordClassList = [
+        ['adjective','形容词'],
+        ['adverb','副词'],
+        ['auxiliary verb','助动词'],
+        ['conjunction','连词 '],
+        ['definite article','定冠词'],
+        ['determiner','限定词'],
+        ['exclamation','感叹号'],
+        ['indefinite article','不定冠词'],
+        ['infinitive marker','不定式标记'],
+        ['linking verb','连接动词'],
+        ['modal verb','情态动词'],
+        ['noun','名词'],
+        ['number','数字'],
+        ['ordinal number','序数'],
+        ['preposition','介词'],
+        ['pronoun','代词'],
+        ['verb','动词'],
+    ];
+
+    selectObj = document.createElement("select");
+    selectObj.setAttribute("id","class");
+    for (i in wordClassList) {
+        optionObj = document.createElement("option");
+        optionObj.setAttribute("value", wordClassList[i][0]);
+        optionObj.textContent =  wordClassList[i][1];
+        selectObj.appendChild(optionObj);
+    }
+    labelObj.appendChild(selectObj);
+    sentenceBlandAdd.appendChild(labelObj);
+    
+    sentenceBlandAdd.appendChild(document.createElement("br"));
+    // 提交按钮
+    labelObj = document.createElement("label");
+    buttonObj = document.createElement("button");
+    buttonObj.textContent = "submit";
+    buttonObj.style.color = "white";
+    buttonObj.style.backgroundColor = "black";
+    buttonObj.onclick = wordStudySentenctAddSubmit;
+    //inputObj.setAttribute("size",100);
+    labelObj.appendChild(buttonObj);
+    sentenceBlandAdd.appendChild(labelObj);
+    // 提交结果显示区域
+    sentenceBlandAddResultObj = document.createElement("p");
+    sentenceBlandAdd.appendChild(sentenceBlandAddResultObj);
+    
+}
+
+function wordStudySentenctAddSubmit(e) {
+    // 获取信息
+    
+    enSentence = document.getElementById("enSentence");
+    chinese = document.getElementById("chinese");
+    word = document.getElementById("word");
+    classObj = document.getElementById("class");
+
+    console.log(enSentence.value,chinese.value,word.value,enSentence.value );
+
+    strUrl = backendApiHost+"/hyw/word/sentenceblankadd";
+    params ={
+        sentence:enSentence.value,
+        chinese: chinese.value,
+        blank:word.value,
+        class:classObj.value
+    };
+    ajax.post(strUrl, params, function(result){
+        console.log(result);
+
+        if(result.errNo>0){
+            e.target.parentNode.nextSibling.textContent= "添加失败："+ result.errMsg;
+            return
+        }
+        e.target.parentNode.nextSibling.textContent = "添加成功";
+        setTimeout(function() {
+            wordStudySentenctAddRender();
+        }, 750);
+        
+    },"json");
+    
+}
+
+function wordStudyQuiz() {
+
     worldList=[
         ["a_1","a","indefinite article"],
         ["abandon_1","abandon","verb"],
@@ -5950,22 +6148,17 @@ function wordStudy() {
         ["zone_1","zone","noun"]
     ];
 
-    
+    wordBox = document.getElementById("wordBox");
+    wordBox.innerHTML="";
 
-
-    //console.log(worldList[randomKey]);
-    
-    //worldBox = document.getElementsByClassName("bottom")[0];
-
-	contentAreaDiv = document.getElementById("contentArea");
-	contentAreaDiv.innerHTML = "";
-
-    worldBox = document.createElement("div");
-    worldBox.style.fontSize="24px";
-    worldBox.style.paddingTop="1px";
-    //worldBox.style.paddingLeft="15px";
-    worldBox.style.backgroundColor="#222"
-    //worldBox.setAttribute("class","bottom")
+    h3Obj = document.createElement("h3");
+    h3Obj.textContent = "词汇测试";
+    h3Obj.style.backgroundColor = "#222";
+    h3Obj.style.color = "white";
+    h3Obj.style.fontSize="26px";
+    h3Obj.style.margin = "0";
+    h3Obj.style.padding = "5px 10px";
+    wordBox.appendChild(h3Obj);
 
     lastRandomNo = 0;
     for (i = 0; i< 10; i++) {
@@ -6041,13 +6234,6 @@ function wordStudy() {
         aObj.target="_blank";
         pObj.appendChild(aObj);
         
-        worldBox.appendChild(pObj);
-        
-
-
+        wordBox.appendChild(pObj);
     }
-
-
-    contentAreaDiv.appendChild(worldBox);
-    
 }
