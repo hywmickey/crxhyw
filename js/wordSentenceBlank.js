@@ -13,7 +13,13 @@ function wordSentenceBlank() {
     sentenceDiv.setAttribute("id","sentenceDiv");
     contentAreaDiv.appendChild(sentenceDiv);
 
+    // 添加例句
+    sentenceBlandAdd = document.createElement("div");
+    sentenceBlandAdd.setAttribute("id","sentenceBlandAdd");
+    contentAreaDiv.appendChild(sentenceBlandAdd);
+
     wordSentenceBlankGetQ();
+    wordStudySentenctAddRender();
 
 
 }
@@ -73,7 +79,7 @@ function wordSentenceBlankRenderQ(result) {
     
     answerOptionList = [];
     for (var i = 0; i<answerOptionCnt; i++) {
-        optionStr = String.fromCharCode(65+i)+". ";
+        optionStr = " "+String.fromCharCode(65+i)+". ";
         
 
         if (i== randomNo) {
@@ -113,6 +119,9 @@ function wordSentenceBlankRenderQ(result) {
     nextButtonObj.textContent = "Next";
     nextButtonObj.style.color="white";
     nextButtonObj.style.backgroundColor="black";
+    nextButtonObj.style.position="absolute";
+    nextButtonObj.style.top="40px";
+    nextButtonObj.style.right="300px";
     nextButtonObj.onclick = wordSentenceBlankGetQ;
     sentenceDiv.appendChild(nextButtonObj);
     
