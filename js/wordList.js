@@ -1,11 +1,5 @@
 function wordStudy() {
     
-
-
-    //console.log(worldList[randomKey]);
-    
-    //wordBox = document.getElementsByClassName("bottom")[0];
-
 	contentAreaDiv = document.getElementById("contentArea");
 	contentAreaDiv.innerHTML = "";
 
@@ -19,15 +13,9 @@ function wordStudy() {
     contentAreaDiv.appendChild(wordBox);
 
     // 添加例句
-
-
     sentenceBlandAdd = document.createElement("div");
     sentenceBlandAdd.setAttribute("id","sentenceBlandAdd");
-
-
-    
     contentAreaDiv.appendChild(sentenceBlandAdd);
-
 
     wordStudyQuiz();
     wordStudySentenctAddRender();
@@ -152,6 +140,9 @@ function wordStudySentenctAddRender(){
     buttonObj.textContent = "submit";
     buttonObj.style.color = "white";
     buttonObj.style.backgroundColor = "black";
+    buttonObj.style.position="absolute";
+    buttonObj.style.top="150px";
+    buttonObj.style.right="160px";
     buttonObj.onclick = wordStudySentenctAddSubmit;
     //inputObj.setAttribute("size",100);
     labelObj.appendChild(buttonObj);
@@ -6161,7 +6152,7 @@ function wordStudyQuiz() {
     wordBox.appendChild(h3Obj);
 
     lastRandomNo = 0;
-    for (i = 0; i< 10; i++) {
+    for (i = 0; i< 8; i++) {
         randomNo = Math.random();
         randomKey = (parseInt(randomNo*10000)+lastRandomNo)%worldList.length;
         lastRandomNo += randomKey;
