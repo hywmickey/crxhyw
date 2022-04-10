@@ -115,23 +115,23 @@ function wordStudySentenctAddRender(){
     labelObj.appendChild(spanObj);
 
     wordClassList = [
-        ["noun","名词"],
-        ["verb","动词"],
         ["adjective","形容词"],
         ["adverb","副词"],
-        ["pronoun","代词"],
-        ["preposition","介词"],
-        ["determiner","限定词"],
-        ["number","数词"],
-        ["conjunction","连词"],
-        ["exclamation","感叹词"],
-        ["modal verb","情态动词"],
-        ["ordinal number","序数"],
         ["auxiliary verb","助动词"],
-        ["infinitive marker","不定式标记"],
+        ["conjunction","连词"],
         ["definite article","定冠词"],
-        ["linking verb","连接动词"],
+        ["determiner","限定词"],
+        ["exclamation","感叹词"],
         ["indefinite article","不定冠词"],
+        ["infinitive marker","不定式标记"],
+        ["linking verb","连接动词"],
+        ["modal verb","情态动词"],
+        ["noun","名词"],
+        ["number","数词"],
+        ["ordinal number","序数词"],
+        ["preposition","介词"],
+        ["pronoun","代词"],
+        ["verb","动词"],
     ];
 
     selectObj = document.createElement("select");

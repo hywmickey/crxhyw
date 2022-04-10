@@ -14,7 +14,7 @@ function todo() {
     inputObj.onchange = todoAdd;
     inputObj.style.width="660px";
     inputObj.style.fontSize = "32px";
-    inputObj.setAttribute("placeholder","来添加一个todo吧");
+    inputObj.setAttribute("placeholder","快来添加一个todo吧");
     todoDiv.appendChild(inputObj);
     
     buttonObj = document.createElement("button");
