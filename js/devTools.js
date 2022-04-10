@@ -79,6 +79,7 @@ function devTools() {
     jsonObj = JSON.parse(jsonStr);
     jsonParseFormate = document.createElement("pre");
     jsonParseFormate.textContent = JSON.stringify(jsonObj, null, 4);
+    jsonParseFormate.textContent += "\n\n"+devToolsJsonObjToForm(jsonObj);
     jsonParseDiv.appendChild(jsonParseFormate);
 
     contentAreaDiv.appendChild(jsonParseDiv);
@@ -111,6 +112,15 @@ function devTools() {
     contentAreaDiv.appendChild(urlParseDiv);
     
 }
+// json 转form
+function devToolsJsonObjToForm(jsonObj){
+    strForm = "";
+    for(i in jsonObj) {
+        strForm += `&${i}=`+encodeURI(jsonObj[i]);
+    }
+
+    return strForm;
+}
 
 function devToolsUriDecode(e) {
     try {
@@ -132,6 +142,8 @@ function devToolsJsonFormate(e){
     try {
         jsonObj = JSON.parse(jsonStr);
         e.target.nextSibling.textContent = JSON.stringify(jsonObj, null, 4);
+        e.target.nextSibling.textContent  += "\n\n"+devToolsJsonObjToForm(jsonObj);
+
     } catch(error) {
         //console.log(e.toString());
         e.target.nextSibling.textContent = error.toString();
@@ -143,7 +155,6 @@ function devToolsTimeToTimeStamp(e){
         timeStr = e.target.value;
         timeObj = new Date(timeStr);
         e.target.parentNode.nextSibling.textContent= parseInt(timeObj.getTime()/1000);
-
     } catch(error) {
         e.target.parentNode.nextSibling.textContent = error.toString();
     }
