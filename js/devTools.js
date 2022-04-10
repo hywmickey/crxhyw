@@ -79,8 +79,14 @@ function devTools() {
     jsonObj = JSON.parse(jsonStr);
     jsonParseFormate = document.createElement("pre");
     jsonParseFormate.textContent = JSON.stringify(jsonObj, null, 4);
-    jsonParseFormate.textContent += "\n\n"+devToolsJsonObjToForm(jsonObj);
     jsonParseDiv.appendChild(jsonParseFormate);
+
+    jsonParseFormDiv = document.createElement("div");
+    jsonParseFormDiv.style.wordBreak="break-all";
+    jsonParseFormDiv.textContent = devToolsJsonObjToForm(jsonObj);
+    jsonParseDiv.appendChild(jsonParseFormDiv);
+
+    
 
     contentAreaDiv.appendChild(jsonParseDiv);
     
@@ -142,7 +148,7 @@ function devToolsJsonFormate(e){
     try {
         jsonObj = JSON.parse(jsonStr);
         e.target.nextSibling.textContent = JSON.stringify(jsonObj, null, 4);
-        e.target.nextSibling.textContent  += "\n\n"+devToolsJsonObjToForm(jsonObj);
+        e.target.nextSibling.nextSibling.textContent  = devToolsJsonObjToForm(jsonObj);
 
     } catch(error) {
         //console.log(e.toString());
