@@ -242,7 +242,7 @@ function todoToDiv(orderNo, strContent){
 
     todoListDiv.style.marginTop = "20px";
     todoItemDiv = document.createElement("div");
-    todoItemDiv.style.padding = "18px 5px";
+    todoItemDiv.style.padding = "4px 5px";
 
     if (orderNo <=0 ) {
         orderNo=todoListDiv.childElementCount;
