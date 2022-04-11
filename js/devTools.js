@@ -158,7 +158,11 @@ function devToolsJsonFormate(e){
 
 function devToolsTimeToTimeStamp(e){
     try {
-        timeStr = e.target.value;
+        timeStr = e.target.value.trim();
+        
+        if (timeStr.length == 10) {
+            timeStr+= " 00:00:00";
+        }
         timeObj = new Date(timeStr);
         e.target.parentNode.nextSibling.textContent= parseInt(timeObj.getTime()/1000);
     } catch(error) {
