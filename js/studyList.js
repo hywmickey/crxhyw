@@ -42,6 +42,9 @@ function studyList() {
 			["redisTry", "https://try.redis.io/"],
 			["EF", "https://www.ef.com/wwen/english-resources/"]
 		],
+		[
+			["刷新世界观合集","https://www.bilibili.com/read/readlist/rl244892"],
+		],
 	];
 	/*
 	// 按列优先级的方式排列数据
