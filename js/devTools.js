@@ -113,7 +113,8 @@ function devTools() {
     urlParseDiv.appendChild(labelObj);
 
     pObj = document.createElement("p");
-    pObj.textContent = decodeURI(urlStr);
+    pObj.textContent = decodeURIComponent(urlStr);
+    pObj.style.wordBreak="break-all";
     urlParseDiv.appendChild(pObj);
     contentAreaDiv.appendChild(urlParseDiv);
     
@@ -131,7 +132,7 @@ function devToolsJsonObjToForm(jsonObj){
 function devToolsUriDecode(e) {
     try {
         urlStr = e.target.value;
-        e.target.parentNode.nextSibling.textContent =decodeURI(urlStr);
+        e.target.parentNode.nextSibling.textContent =decodeURIComponent(urlStr);
     } catch(error) {
         //console.log(e.toString());
         e.target.parentNode.nextSibling.textContent = error.toString();
