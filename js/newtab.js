@@ -4,7 +4,7 @@ document.getElementById("todo").onclick = todo;
 document.getElementById("studyList").onclick = studyList;
 document.getElementById("devTools").onclick = devTools;
 
-var backendApiHost= "http://localhost:8081";
+//var backendApiHost= "http://localhost:8081";
 var backendApiHost= "http://47.94.137.24:8081";
 
 chrome.storage.sync.get({defaultPage:""},function(items){

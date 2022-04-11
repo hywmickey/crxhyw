@@ -14,7 +14,7 @@ function todo() {
     inputObj.onchange = todoAdd;
     inputObj.style.width="660px";
     inputObj.style.fontSize = "32px";
-    inputObj.setAttribute("placeholder","来添加一个todo吧");
+    inputObj.setAttribute("placeholder","快来添加一个todo吧");
     todoDiv.appendChild(inputObj);
     
     buttonObj = document.createElement("button");
@@ -242,7 +242,7 @@ function todoToDiv(orderNo, strContent){
 
     todoListDiv.style.marginTop = "20px";
     todoItemDiv = document.createElement("div");
-    todoItemDiv.style.padding = "18px 5px";
+    todoItemDiv.style.padding = "4px 5px";
 
     if (orderNo <=0 ) {
         orderNo=todoListDiv.childElementCount;
