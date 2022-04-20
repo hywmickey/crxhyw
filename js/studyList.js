@@ -14,6 +14,7 @@ function studyList() {
 			["李文周的博客", "https://www.liwenzhou.com/"],
 			["地鼠文档", "http://wen.topgoer.com/"],
 			["Go指南", "https://tour.go-zh.org/"],
+			["golang标准库", "https://pkg.go.dev/"],
 			["touzid", "https://www.touzid.com/"],
 			["w3cschool", "https://www.w3cschool.cn/tutorial/"],
 			["C语言中文网", "http://c.biancheng.net/"],

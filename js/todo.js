@@ -253,7 +253,7 @@ function todoToDiv(orderNo, strContent){
     } else {
         todoItemDiv.style.backgroundColor="#181818";
     }
-
+    todoItemDiv.style.display="list-item";
     todoItemDiv.setAttribute("data-no", orderNo);
 
     textObj = document.createElement("span");

@@ -36,7 +36,7 @@ function commTab() {
 			["GitHub中文社区", "https://www.githubs.cn/"],
 			["古董电脑室", "https://zhuanlan.zhihu.com/retrocomputing"],
 			["compiler explorer", "https://gcc.godbolt.org"],
-			["GitOpt", "./html/gitopt.html"],
+			["GitOpt", "../html/gitopt.html"],
 			["goland Activation", "http://www.lookdiv.com/"],
 			["死亡公司公墓", "https://www.itjuzi.com/deathCompany"],
 			["ssyoutube","https://zh.ssyoutube.com/"]
