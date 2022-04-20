@@ -249,9 +249,9 @@ function todoToDiv(orderNo, strContent){
     }
 
     if (orderNo%2==0) {
-        todoItemDiv.style.backgroundColor="#000";
+        todoItemDiv.style.backgroundColor="#101010";
     } else {
-        todoItemDiv.style.backgroundColor="#181818";
+        todoItemDiv.style.backgroundColor="#1d1d1d";
     }
     todoItemDiv.style.display="list-item";
     todoItemDiv.setAttribute("data-no", orderNo);
