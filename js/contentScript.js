@@ -49,26 +49,27 @@ function wxpage() {
 
     // 隐藏顶部导航
     var wxnav = document.querySelector("body > div.main > div > div.panel.give_me > div.tab");
-    wxnav.style.display = 'none';
+    if (wxnav) wxnav.style.display = 'none';
+    
 
     // 隐藏下载导航
     var downloadWx = document.querySelector("body > div.main > div > div.panel.give_me > div.download_entry.ng-scope");
-    downloadWx.style.visibility="hidden";
+    if (downloadWx) downloadWx.style.visibility="hidden";
 
     // 改变背景色
     document.body.style.background = 'black';
 
     // 好友列表修改
     var frinedList = document.querySelector("body > div.main > div > div.panel.give_me > div:nth-child(6)");
-    frinedList.style.top = '50px';
+    if (frinedList) frinedList.style.top = '50px';
 
     // 删除用户信息展现
     var header = document.querySelector("body > div.main > div > div.panel.give_me > div.header");
-    header.parentNode.removeChild(header);
+    if (header) header.parentNode.removeChild(header);
 
     // 聊天区域修改
     var chatArea = document.querySelector("#chatArea");
-    chatArea.addEventListener('mouseover', function(e) {
+    if (chatArea) chatArea.addEventListener('mouseover', function(e) {
 
         // 整个顶部置黑
         var box_hd = document.querySelector("#chatArea");

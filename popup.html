@@ -4,7 +4,31 @@
 	<meta charset="utf-8"/>
 	<title>popup</title>
 </head>
-<body style="width:170px;min-height:15px;">
-<p>crx插件测试</p>
+<body style="width:170px;min-height:150px;">
+
+    <h3>配置</h3>
+    <h4>默认首页</h4>
+    <label><input type="radio" name="defaultPage" value="commTab" />常用书签</label><br/>
+    <label><input type="radio" name="defaultPage" value="wordStudy" />WordQuiz</label><br/>
+    <label><input type="radio" name="defaultPage" value="todo" />TODO</label><br/>
+    <label><input type="radio" name="defaultPage" value="studyList" />学习资料</label><br/>
+    <label><input type="radio" name="defaultPage" value="devTools" />开发工具</label>
+
+    <br />
+    <br />
+
+    <h4>默认翻译</h4>
+    <label><input type="radio" name="defaultTranslation" value="baidu" />百度</label><br/>
+    <label><input type="radio" name="defaultTranslation" value="oxford" />牛津</label><br/>
+    <label><input type="radio" name="defaultTranslation" value="ldoce" />朗文</label><br/>
+    <!-- <label><input type="radio" name="defaultTranslation" value="collins" />柯林斯</label><br/> -->
+    <!-- <label><input type="radio" name="defaultTranslation" value="bing" />Bing</label> -->
+
+    <br />
+    <br />
+
+    <button id="save">Save</button>
+    <div id="status"></div>
+    <script src="/js/options.js"></script>
 </body>
 </html>

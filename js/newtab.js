@@ -33,11 +33,3 @@ chrome.storage.sync.get({defaultPage:""},function(items){
 })
 
 
-document.querySelector('#setting').addEventListener('click', function() {
-    if (chrome.runtime.openOptionsPage) {
-      chrome.runtime.openOptionsPage();
-    } else {
-      window.open(chrome.runtime.getURL('options.html'));
-    }
-  });
-
