@@ -10,6 +10,7 @@ function studyList() {
 			["深入理解计算机系统", "https://www.bilibili.com/video/BV1Gf4y1H71W"],
 			["Linux Man", "https://www.kernel.org/doc/man-pages/"],
 			["网页配色", "http://tool.c7sky.com/webcolor/#character_3"],
+			["Web API", "https://developer.mozilla.org/zh-CN/docs/Web/API"],
 			["CSDN", "https://blog.csdn.net/nav/watchers"],
 			["李文周的博客", "https://www.liwenzhou.com/"],
 			["地鼠文档", "http://wen.topgoer.com/"],
