@@ -4,26 +4,20 @@
 	"version": "1.0",
 	"description": "插件测试",
 	"author": "hywmickey",
-///*
 	"icons":
 	{
 		"48": "img/icon48.png",
 		"128": "img/icon128.png"
 	},
-	//*/
 	"browser_action": 
 	{
 		"default_icon": "img/icon128.png",
 		"default_title" : "hyw的插件",
-		"default_popup": "popup.html"
+		"default_popup": "html/popup.html"
 	},
 	"background":
 	{
-		// 2种指定方式，如果指定JS，那么会自动生成一个背景页
-		//"page": "background.html"
-		//"service_worker": "background.js"
-		"scripts": ["background.js"]
-
+		"scripts": ["js/background.js"]
 	},
 
 	"content_scripts":
@@ -34,20 +28,16 @@
 			"run_at": "document_end"
 		}
 	],
-
-	// 权限申请
 	"permissions":
 	[
-		"contextMenus", // 右键菜单
+		"contextMenus",
 		"storage"
 	],
 
 	"chrome_url_overrides":
     {
-        // 覆盖浏览器默认的新标签页
         "newtab": "/html/newtab.html"
     },
-	//"options_page" :"/html/options.html",
 	"options_ui": {
 		"page": "/html/options.html",
 		"open_in_tab": false
