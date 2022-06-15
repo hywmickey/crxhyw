@@ -11,6 +11,7 @@ var soret = /www.so.com/;
 var newssoret = /news.so.com/;
 var sogou123ret = /123.sogou.com/;
 var jb51ret = /www.jb51.net/;
+var biliret = /bilibili.com/
 // 微信页面处理
 if(wxre.test(strhref)) {
     commonsetting();
@@ -33,7 +34,9 @@ if(wxre.test(strhref)) {
 } else if(sogou123ret.test(strhref)) {
     commonsetting();
     sogou123page();
-} 
+} else if (biliret.test(strhref)) {
+    biliPage();
+}
 // else if(jb51ret.test(strhref)) {
 //     jb51page();
 // }
@@ -221,6 +224,12 @@ function jb51page() {
     removeByQuerySelector('#header');
     
 }
+
+function biliPage(){
+    //document.body.innerHTML = "禁止查看";
+    //alert("禁止查看");
+}
+
 
 function removeIframe() {
 
