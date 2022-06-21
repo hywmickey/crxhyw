@@ -23,6 +23,7 @@ function studyList() {
 			["元岛", "https://www.midorg.com/"],
 			["书栈网", "https://www.bookstack.cn/"],
 			["菜鸟", "https://www.runoob.com/"],
+			["编程自学之路", "https://r2coding.com/"],
 			["divcss5", "http://www.divcss5.com/"],
 			["leetcode", "https://leetcode.com/"],
 			["Linux From Scratch", "https://www.linuxfromscratch.org/lfs/read.html"],

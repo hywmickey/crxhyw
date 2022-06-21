@@ -28,6 +28,8 @@ function commTab() {
 			["vocabulary", "https://www.vocabulary.com/"],
 			["全历史", "https://www.allhistory.com/"],
 			["真实地图", "https://thetruesize.com/"],
+			["中国裁判文书网", "https://wenshu.court.gov.cn/"],
+			["杠杆ETF", "https://etfdb.com/themes/leveraged-etfs/"],
 			["bejson", "https://www.bejson.com/"],
 			["statcounter", "http://gsa.statcounter.com/"],
 			["aliWebmin", "http://47.94.137.24:10000/"],
