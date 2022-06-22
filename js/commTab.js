@@ -10,7 +10,8 @@ function commTab() {
 			["grafana监控", "https://grafana-inf.zuoyebang.cc/grafana/d/KoprN1-nk/ntsell-shou-mai-fu-wu-jian-kong?orgId=1"],
 			["棒棒堂", "http://www.zuoyebang.cc"],
 			["HR", "http://hr.zuoyebang.cc"],
-			["ToolsFun", "https://tools.fun/"]
+			["ToolsFun", "https://tools.fun/"],
+			["知犀","https://www.zhixi.com/space?page=owner"],
 		],
 		[
 			["日历", "https://www.baidu.com/s?wd=日历"],
