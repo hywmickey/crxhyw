@@ -12,6 +12,7 @@ function commTab() {
 			["HR", "http://hr.zuoyebang.cc"],
 			["ToolsFun", "https://tools.fun/"],
 			["知犀","https://www.zhixi.com/space?page=owner"],
+			["软件替换","https://alternativeto.net/"]
 		],
 		[
 			["日历", "https://www.baidu.com/s?wd=日历"],
