@@ -2,14 +2,6 @@ function commTab() {
 
 	bookMarkList = [
 		[
-			["早时光书屋", "https://calmis-base-cc.suanshubang.cc//static/fe-store-qiankun/#/home/index"],
-			["早时光书屋", "https://calmis.zuoyebang.cc/static/fe-store-qiankun/#/micro-app-mis/student/ty-selection-period"],
-			["售卖sku查询", "http://sellmis.zuoyebang.cc/static/sellgoods/index.html#/goods/goods-manage/sku-manage-list"],
-			["天火平台", "https://tianhuo.zuoyebang.cc/"],
-			["监控平台", "http://op.zuoyebang.cc/static/odin/#/monitor/graph"],
-			["grafana监控", "https://grafana-inf.zuoyebang.cc/grafana/d/KoprN1-nk/ntsell-shou-mai-fu-wu-jian-kong?orgId=1"],
-			["棒棒堂", "http://www.zuoyebang.cc"],
-			["HR", "http://hr.zuoyebang.cc"],
 			["ToolsFun", "https://tools.fun/"],
 			["知犀","https://www.zhixi.com/space?page=owner"],
 			["软件替换","https://alternativeto.net/"]
@@ -49,6 +41,22 @@ function commTab() {
 			["便签", "https://yun.smartisan.com/#/notes"],
 			["笔记", "https://note.youdao.com"],
 			["新生", "https://b.xinshengdaxue.com/index.html"]
+		],
+		[
+			["郑州大飞说房","https://space.bilibili.com/2121761371/video"],
+			["从业地产13年管理者","https://space.bilibili.com/1014368785/video"],
+			["王纯迅","https://space.bilibili.com/479817898/video"],
+			["宋鸿兵观天下","https://space.bilibili.com/390894226/dynamic"],
+			["马男说投资","https://space.bilibili.com/635383128/video"],
+			["马红漫","https://space.bilibili.com/579855638/dynamic"],
+			["火烈鸟说金融","https://space.bilibili.com/499089442/video"],
+			["刘昌松","https://www.ixigua.com/home/68552799617/"],
+			["陈译辉财经","https://www.ixigua.com/home/6755783665"],
+			["金岩石","https://space.bilibili.com/1454271217/dynamic"],
+			["悦涛很二","https://space.bilibili.com/253024554/dynamic"],
+			["张捷财经观察","https://space.bilibili.com/1955809864/dynamic"],
+			["韩秀云讲经济","https://space.bilibili.com/673420980/dynamic"],
+			["作业帮","https://news.so.com/ns?q=%E4%BD%9C%E4%B8%9A%E5%B8%AE"],
 		]
 	];
 	/*

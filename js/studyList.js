@@ -6,6 +6,7 @@ function studyList() {
 			["LDOCE", "https://www.ldoceonline.com/"],
 			["Mooc", "https://www.icourse163.org/"],
 			["bilibili", "https://space.bilibili.com/456882810/favlist?fid=963174610&ftype=create"],
+			["0voice","https://github.com/0voice"],
 			["Linux系统编程", "https://www.bilibili.com/video/BV1gb411L7fK"],
 			["深入理解计算机系统", "https://www.bilibili.com/video/BV1Gf4y1H71W"],
 			["Linux Man", "https://www.kernel.org/doc/man-pages/"],
@@ -15,6 +16,7 @@ function studyList() {
 			["李文周的博客", "https://www.liwenzhou.com/"],
 			["地鼠文档", "http://wen.topgoer.com/"],
 			["Go指南", "https://tour.go-zh.org/"],
+			["在线运行SQL","http://mysql.jsrun.net/"],
 			["golang标准库", "https://pkg.go.dev/"],
 			["touzid", "https://www.touzid.com/"],
 			["w3cschool", "https://www.w3cschool.cn/tutorial/"],
@@ -45,6 +47,14 @@ function studyList() {
 			["algorithm", "https://algorithm-visualizer.org/"],
 			["redisTry", "https://try.redis.io/"],
 			["EF", "https://www.ef.com/wwen/english-resources/"]
+		],
+		[
+			["IT老齐架构300讲","https://space.bilibili.com/359351574/channel/collectiondetail?sid=34444"],
+			["简说linux","https://space.bilibili.com/646178510/video"],
+			["Coding Master","https://space.bilibili.com/41036636/channel/collectiondetail?sid=1096"],
+			["补给站Linux内核","https://space.bilibili.com/1270307228/article"],
+			["CPP开发","https://space.bilibili.com/1112739297/video"],
+			["golang云原生","https://space.bilibili.com/1522375372/video"],
 		],
 		[
 			["刷新世界观合集","https://www.bilibili.com/read/readlist/rl244892"],
