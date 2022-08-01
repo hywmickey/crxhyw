@@ -4,15 +4,19 @@ function commTab() {
 		[
 			["ToolsFun", "https://tools.fun/"],
 			["知犀","https://www.zhixi.com/space?page=owner"],
-			["软件替换","https://alternativeto.net/"]
+			["软件替换","https://alternativeto.net/"],
+			["v2free","https://cdn.v2free.net/user"]
 		],
 		[
 			["日历", "https://www.baidu.com/s?wd=日历"],
 			["dedao", "https://www.dedao.cn/"],
 			["trello", "https://trello.com/"],
 			["github", "https://hub.fastgit.org/"],
+			["tiobeIndex","https://www.tiobe.com/tiobe-index/"],
+			["PYPL","https://pypl.github.io/PYPL.html"],
 			["dockerHub", "https://hub.docker.com/"],
 			["ipaddress", "https://www.ipaddress.com/"],
+			["笔记看板milanote","https://app.milanote.com/"],
 			["topbook", "https://topbook.cc/"],
 			["少数派", "https://sspai.com/"],
 			["Anki", "https://ankiuser.net/study/"],
@@ -43,8 +47,9 @@ function commTab() {
 			["新生", "https://b.xinshengdaxue.com/index.html"]
 		],
 		[
+			["郑州法拍房","https://space.bilibili.com/1900760964/dynamic"],
+			["从业地产13年","https://space.bilibili.com/1014368785/video"],
 			["郑州大飞说房","https://space.bilibili.com/2121761371/video"],
-			["从业地产13年管理者","https://space.bilibili.com/1014368785/video"],
 			["王纯迅","https://space.bilibili.com/479817898/video"],
 			["宋鸿兵观天下","https://space.bilibili.com/390894226/dynamic"],
 			["马男说投资","https://space.bilibili.com/635383128/video"],
@@ -56,6 +61,14 @@ function commTab() {
 			["悦涛很二","https://space.bilibili.com/253024554/dynamic"],
 			["张捷财经观察","https://space.bilibili.com/1955809864/dynamic"],
 			["韩秀云讲经济","https://space.bilibili.com/673420980/dynamic"],
+			["老宇投资","https://space.bilibili.com/52764688/dynamic"],
+			["李大霄","https://space.bilibili.com/2137589551/dynamic"],
+			["人生游戏攻略","https://space.bilibili.com/517230844/video"],
+			["小Lin说","https://space.bilibili.com/520819684/dynamic"],
+			["珍大户","https://space.bilibili.com/355327690/dynamic"],
+			["思维实验室","https://space.bilibili.com/14583962/dynamic"],
+			["小丽有事儿说","https://space.bilibili.com/1644442967"],
+			["进击的沈帅波","https://space.bilibili.com/19201320/dynamic"],
 			["作业帮","https://news.so.com/ns?q=%E4%BD%9C%E4%B8%9A%E5%B8%AE"],
 		]
 	];

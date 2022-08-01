@@ -50,11 +50,13 @@ function studyList() {
 		],
 		[
 			["IT老齐架构300讲","https://space.bilibili.com/359351574/channel/collectiondetail?sid=34444"],
+			["Go程序设计语言","https://space.bilibili.com/283633806/channel/collectiondetail?sid=418349&ctype=0"],
 			["简说linux","https://space.bilibili.com/646178510/video"],
 			["Coding Master","https://space.bilibili.com/41036636/channel/collectiondetail?sid=1096"],
 			["补给站Linux内核","https://space.bilibili.com/1270307228/article"],
 			["CPP开发","https://space.bilibili.com/1112739297/video"],
 			["golang云原生","https://space.bilibili.com/1522375372/video"],
+			["阿布编程","https://space.bilibili.com/261582436/video"],
 		],
 		[
 			["刷新世界观合集","https://www.bilibili.com/read/readlist/rl244892"],
