@@ -14,6 +14,7 @@ function studyList() {
 			["Web API", "https://developer.mozilla.org/zh-CN/docs/Web/API"],
 			["CSDN", "https://blog.csdn.net/nav/watchers"],
 			["李文周的博客", "https://www.liwenzhou.com/"],
+			["廖雪峰的官方网站", "https://www.liaoxuefeng.com/"],
 			["地鼠文档", "http://wen.topgoer.com/"],
 			["Go指南", "https://tour.go-zh.org/"],
 			["在线运行SQL","http://mysql.jsrun.net/"],
@@ -57,9 +58,11 @@ function studyList() {
 			["CPP开发","https://space.bilibili.com/1112739297/video"],
 			["golang云原生","https://space.bilibili.com/1522375372/video"],
 			["阿布编程","https://space.bilibili.com/261582436/video"],
+			["Play with Kubernetes","https://labs.play-with-k8s.com/"],
 		],
 		[
 			["刷新世界观合集","https://www.bilibili.com/read/readlist/rl244892"],
+			["思维新学府","https://space.bilibili.com/1147366908/video"],
 		],
 	];
 	/*

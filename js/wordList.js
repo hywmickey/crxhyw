@@ -57,7 +57,7 @@ function wordStudySentenctAddRender(){
     spanObj.style.textAlign="right";
     labelObj.appendChild(spanObj);
     inputObj = document.createElement("input");
-    inputObj.setAttribute("size",100);
+    inputObj.setAttribute("size",90);
     inputObj.setAttribute("id","enSentence");
     labelObj.appendChild(inputObj);
 
@@ -74,7 +74,7 @@ function wordStudySentenctAddRender(){
     spanObj.style.textAlign="right";
     labelObj.appendChild(spanObj);
     inputObj = document.createElement("input");
-    inputObj.setAttribute("size",100);
+    inputObj.setAttribute("size",90);
     inputObj.setAttribute("id","chinese");
     labelObj.appendChild(inputObj);
     sentenceBlandAdd.appendChild(labelObj);

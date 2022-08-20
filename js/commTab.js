@@ -5,7 +5,8 @@ function commTab() {
 			["ToolsFun", "https://tools.fun/"],
 			["知犀","https://www.zhixi.com/space?page=owner"],
 			["软件替换","https://alternativeto.net/"],
-			["v2free","https://cdn.v2free.net/user"]
+			["v2free","https://cdn.v2free.net/user"],
+			["v2rayse","https://v2rayse.com/"],
 		],
 		[
 			["日历", "https://www.baidu.com/s?wd=日历"],
@@ -68,6 +69,7 @@ function commTab() {
 			["珍大户","https://space.bilibili.com/355327690/dynamic"],
 			["思维实验室","https://space.bilibili.com/14583962/dynamic"],
 			["小丽有事儿说","https://space.bilibili.com/1644442967"],
+			["磐他","https://space.bilibili.com/533675317/dynamic"],
 			["进击的沈帅波","https://space.bilibili.com/19201320/dynamic"],
 			["作业帮","https://news.so.com/ns?q=%E4%BD%9C%E4%B8%9A%E5%B8%AE"],
 		]
