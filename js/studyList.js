@@ -63,6 +63,7 @@ function studyList() {
 		[
 			["刷新世界观合集","https://www.bilibili.com/read/readlist/rl244892"],
 			["思维新学府","https://space.bilibili.com/1147366908/video"],
+			["忽悠的原理与技巧","https://zhuanlan.zhihu.com/p/19977877"],
 		],
 	];
 	/*
