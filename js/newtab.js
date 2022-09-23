@@ -3,6 +3,7 @@ document.getElementById("wordStudy").onclick = wordStudy;
 document.getElementById("todo").onclick = todo;
 document.getElementById("studyList").onclick = studyList;
 document.getElementById("devTools").onclick = devTools;
+document.getElementById("bookmark").onclick = bookmark;
 
 //var backendApiHost= "http://localhost:8081";
 var backendApiHost= "http://47.94.137.24:8081";
@@ -26,6 +27,9 @@ chrome.storage.sync.get({defaultPage:""},function(items){
             break;
         case "devTools":
             devTools();
+            break;
+        case "bookmark":
+            bookmark();
             break;
         default:
             commTab();
