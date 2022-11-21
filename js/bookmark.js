@@ -67,6 +67,9 @@ function bookmarkPageItemsDisplay(bookmarks){
 	blockMarkObj = document.createDocumentFragment();
 	itemObj = document.createElement("div");
 	itemObj.setAttribute("class","bookmarkItems");
+	
+	bookmarks = bookmarks.reverse();
+
 	for (i in bookmarks) {
 		//console.log(bookmarks[i]);
 
@@ -74,8 +77,12 @@ function bookmarkPageItemsDisplay(bookmarks){
 		//aObj.text = bookmarks[i]["title"];
 
 		//console.log(bookmarks[i]["title"]);
+		console.log(bookmarks[i]);
 		aObj = document.createElement("a");
-		aObj.textContent = bookmarks[i].title;
+
+		addTimeObj = new Date(bookmarks[i].dateAdded);
+
+		aObj.textContent = addTimeObj.toLocaleDateString().replace(/\//g, "-")+" "+bookmarks[i].title;
 		aObj.href=bookmarks[i].url;
 		aObj.onclick = bookmarkPageItemUrl;
 

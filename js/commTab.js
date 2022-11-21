@@ -7,6 +7,7 @@ function commTab() {
 			["软件替换","https://alternativeto.net/"],
 			["v2free","https://cdn.v2free.net/user"],
 			["v2rayse","https://v2rayse.com/"],
+			["getafreenode","https://getafreenode.com/node.php?uuid=9E22EDD9-BE7C-6D3D-6540-372EA00E5CB5"],
 		],
 		[
 			["日历", "https://www.baidu.com/s?wd=日历"],
@@ -43,9 +44,16 @@ function commTab() {
 			["ssyoutube","https://zh.ssyoutube.com/"]
 		],
 		[
-			["便签", "https://yun.smartisan.com/#/notes"],
-			["笔记", "https://note.youdao.com"],
-			["新生", "https://b.xinshengdaxue.com/index.html"]
+		    ["王志安","https://www.youtube.com/c/%E7%8E%8B%E5%BF%97%E5%AE%891/videos"],
+		    ["五岳散人","https://www.youtube.com/channel/UCX8KQ5xQlm0MnZkmHO7CBDw/videos"],
+		    ["Bob","https://www.youtube.com/c/LearnEnglishwithBobtheCanadian/videos"],
+		    ["Peppa Pig CN","https://www.youtube.com/channel/UCLGXa2yt6TA8_8GZYZB0kOg/playlists"],
+		    ["Peppa Pig EN","https://www.youtube.com/c/peppapig/playlists"],
+		    ["Journey to the West","https://www.youtube.com/playlist?list=PLxM8GJG6y4n-8ydl3Ezlu21slA4Dar3tG"],
+		    ["TV Series","https://www.youtube.com/c/LearnEnglishWithTVSeries/videos"],
+		    ["BBC","https://www.youtube.com/c/LearnEnglishWithTVSeries/videos"],
+		    ["EnglishClass101","https://www.youtube.com/c/EnglishClass101/videos"],
+		    ["EnglishCourse","https://www.youtube.com/results?search_query=learn+english&sp=EgIQAg%253D%253D"]
 		],
 		[
 			["郑州法拍房","https://space.bilibili.com/1900760964/dynamic"],
@@ -59,11 +67,12 @@ function commTab() {
 			["刘昌松","https://www.ixigua.com/home/68552799617/"],
 			["陈译辉财经","https://www.ixigua.com/home/6755783665"],
 			["金岩石","https://space.bilibili.com/1454271217/dynamic"],
+			["坤姐闯江湖","https://space.bilibili.com/1162818091"],
 			["悦涛很二","https://space.bilibili.com/253024554/dynamic"],
 			["张捷财经观察","https://space.bilibili.com/1955809864/dynamic"],
 			["韩秀云讲经济","https://space.bilibili.com/673420980/dynamic"],
 			["老宇投资","https://space.bilibili.com/52764688/dynamic"],
-			["李大霄","https://space.bilibili.com/2137589551/dynamic"],
+			["李大霄","https://www.ixigua.com/home/54791043962/?source=pgc_author_name&list_entrance=anyVideo"],
 			["人生游戏攻略","https://space.bilibili.com/517230844/video"],
 			["小Lin说","https://space.bilibili.com/520819684/dynamic"],
 			["珍大户","https://space.bilibili.com/355327690/dynamic"],
@@ -72,7 +81,12 @@ function commTab() {
 			["磐他","https://space.bilibili.com/533675317/dynamic"],
 			["进击的沈帅波","https://space.bilibili.com/19201320/dynamic"],
 			["作业帮","https://news.so.com/ns?q=%E4%BD%9C%E4%B8%9A%E5%B8%AE"],
-		]
+		],
+		[
+			["便签", "https://yun.smartisan.com/#/notes"],
+			["笔记", "https://note.youdao.com"],
+			["新生", "https://b.xinshengdaxue.com/index.html"]
+		],
 	];
 	/*
 	// 按列优先级的方式排列数据
@@ -129,6 +143,7 @@ function commTab() {
 			aObj = document.createElement("a");
 			aObj.text = bookMarkList[i][k][0];
 			aObj.href=bookMarkList[i][k][1];
+			aObj.target="_blank";
 			pObj = document.createElement("p");
 			pObj.appendChild(aObj);
 			itemObj.appendChild(pObj);

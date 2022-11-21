@@ -7,8 +7,10 @@ function studyList() {
 			["Mooc", "https://www.icourse163.org/"],
 			["bilibili", "https://space.bilibili.com/456882810/favlist?fid=963174610&ftype=create"],
 			["0voice","https://github.com/0voice"],
+			["幼麟实验室","https://space.bilibili.com/567195437/video"],
 			["Linux系统编程", "https://www.bilibili.com/video/BV1gb411L7fK"],
-			["深入理解计算机系统", "https://www.bilibili.com/video/BV1Gf4y1H71W"],
+			["算法导论","https://www.bilibili.com/video/BV1B34y1S7Js/"],
+			["深入理解计算机系统", "https://www.bilibili.com/video/BV1Vh411r7ef/"],
 			["Linux Man", "https://www.kernel.org/doc/man-pages/"],
 			["网页配色", "http://tool.c7sky.com/webcolor/#character_3"],
 			["Web API", "https://developer.mozilla.org/zh-CN/docs/Web/API"],
@@ -121,6 +123,7 @@ function studyList() {
 			aObj = document.createElement("a");
 			aObj.text = bookMarkList[i][k][0];
 			aObj.href=bookMarkList[i][k][1];
+			aObj.target="_blank";
 			pObj = document.createElement("p");
 			pObj.appendChild(aObj);
 			itemObj.appendChild(pObj);
