@@ -57,7 +57,8 @@ function commTab() {
 		],
 		[
 			["郑州法拍房","https://space.bilibili.com/1900760964/dynamic"],
-			["从业地产13年","https://space.bilibili.com/1014368785/video"],
+			//["从业地产13年","https://space.bilibili.com/1014368785/video"],
+			["从业地产13年","https://space.bilibili.com/1176090278"],
 			["郑州大飞说房","https://space.bilibili.com/2121761371/video"],
 			["王纯迅","https://space.bilibili.com/479817898/video"],
 			["宋鸿兵观天下","https://space.bilibili.com/390894226/dynamic"],

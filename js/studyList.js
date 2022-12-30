@@ -4,6 +4,7 @@ function studyList() {
 		[
 			["Oxford", "https://www.oxfordlearnersdictionaries.com/"],
 			["LDOCE", "https://www.ldoceonline.com/"],
+			["am774","http://www.am774.com/textbook/textbook.shtml"],
 			["Mooc", "https://www.icourse163.org/"],
 			["bilibili", "https://space.bilibili.com/456882810/favlist?fid=963174610&ftype=create"],
 			["0voice","https://github.com/0voice"],
@@ -20,6 +21,7 @@ function studyList() {
 			["地鼠文档", "http://wen.topgoer.com/"],
 			["Go指南", "https://tour.go-zh.org/"],
 			["在线运行SQL","http://mysql.jsrun.net/"],
+			["golinuxcloud","https://www.golinuxcloud.com/"],
 			["golang标准库", "https://pkg.go.dev/"],
 			["touzid", "https://www.touzid.com/"],
 			["w3cschool", "https://www.w3cschool.cn/tutorial/"],
