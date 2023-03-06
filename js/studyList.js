@@ -47,6 +47,8 @@ function studyList() {
 			["搜榜", "https://www.bjsoubang.com/"]
 		],
 		[
+			["信息学奥林匹克竞赛","https://oi-wiki.org/"],
+			["开源算法库","https://the-algorithms.com/zh_Hans"],
 			["Algorithms", "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html"],
 			["VisuAlgo", "https://visualgo.net/zh/"],
 			["algorithm", "https://algorithm-visualizer.org/"],

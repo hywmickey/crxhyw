@@ -25,13 +25,16 @@ if(wxre.test(strhref)) {
 } else if(wxmpret.test(strhref)) {
     //commonsetting();
     //wxmppage();
-} else if(soret.test(strhref)) {
-    commonsetting();
-    sopage();
-} else if(newssoret.test(strhref)) {
-    commonsetting();
-    newssopage();
-} else if(sogou123ret.test(strhref)) {
+}
+// else if(soret.test(strhref)) {
+//     commonsetting();
+//     sopage();
+// } 
+// else if(newssoret.test(strhref)) {
+//     commonsetting();
+//     newssopage();
+// } 
+else if(sogou123ret.test(strhref)) {
     commonsetting();
     sogou123page();
 } else if (biliret.test(strhref)) {
