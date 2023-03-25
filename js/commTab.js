@@ -8,6 +8,7 @@ function commTab() {
 			["v2free","https://cdn.v2free.net/user"],
 			["v2rayse","https://v2rayse.com/"],
 			["getafreenode","https://getafreenode.com/node.php?uuid=9E22EDD9-BE7C-6D3D-6540-372EA00E5CB5"],
+			["clashfree","https://clashfree.eu.org/"],
 		],
 		[
 			["日历", "https://www.baidu.com/s?wd=日历"],
