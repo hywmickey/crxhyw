@@ -32,7 +32,7 @@ function studyList() {
 			["菜鸟", "https://www.runoob.com/"],
 			["编程自学之路", "https://r2coding.com/"],
 			["divcss5", "http://www.divcss5.com/"],
-			["leetcode", "https://leetcode.com/"],
+			["leetcode", "https://leetcode.cn/problemset/all/"],
 			["Linux From Scratch", "https://www.linuxfromscratch.org/lfs/read.html"],
 			["Unix Tutorial", "https://rc.byu.edu/documentation/unix-tutorial/"],
 			["bstTrends", "https://www.federalreserve.gov/monetarypolicy/bst_recenttrends.htm"],
