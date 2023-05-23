@@ -2,6 +2,17 @@ function studyList() {
 
 	bookMarkList = [
 		[
+			["geeksforgeeks","https://www.geeksforgeeks.org/fundamentals-of-algorithms/"],
+			["hackerrank","https://www.hackerrank.com/dashboard"],
+			["信息学奥林匹克竞赛","https://oi-wiki.org/"],
+			["开源算法库","https://the-algorithms.com/zh_Hans"],
+			["Algorithms", "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html"],
+			["VisuAlgo", "https://visualgo.net/zh/"],
+			["algorithm", "https://algorithm-visualizer.org/"],
+			["redisTry", "https://try.redis.io/"],
+			["EF", "https://www.ef.com/wwen/english-resources/"]
+		],
+		[
 			["Oxford", "https://www.oxfordlearnersdictionaries.com/"],
 			["LDOCE", "https://www.ldoceonline.com/"],
 			["am774","http://www.am774.com/textbook/textbook.shtml"],
@@ -45,15 +56,6 @@ function studyList() {
 			["linux265", "https://linux265.com/"],
 			["64k动画", "https://www.pouet.net/"],
 			["搜榜", "https://www.bjsoubang.com/"]
-		],
-		[
-			["信息学奥林匹克竞赛","https://oi-wiki.org/"],
-			["开源算法库","https://the-algorithms.com/zh_Hans"],
-			["Algorithms", "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html"],
-			["VisuAlgo", "https://visualgo.net/zh/"],
-			["algorithm", "https://algorithm-visualizer.org/"],
-			["redisTry", "https://try.redis.io/"],
-			["EF", "https://www.ef.com/wwen/english-resources/"]
 		],
 		[
 			["IT老齐架构300讲","https://space.bilibili.com/359351574/channel/collectiondetail?sid=34444"],
