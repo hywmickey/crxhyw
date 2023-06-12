@@ -11,6 +11,7 @@ function commTab() {
 			["clashfree","https://clashfree.eu.org/"],
 		],
 		[
+			["IP","https://www.cip.cc/"],
 			["日历", "https://www.baidu.com/s?wd=日历"],
 			["dedao", "https://www.dedao.cn/"],
 			["trello", "https://trello.com/"],
