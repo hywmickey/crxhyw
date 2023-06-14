@@ -15,7 +15,7 @@ function commTab() {
 			["日历", "https://www.baidu.com/s?wd=日历"],
 			["dedao", "https://www.dedao.cn/"],
 			["trello", "https://trello.com/"],
-			["github", "https://hub.fastgit.org/"],
+			["ghproxy", "https://ghproxy.com/"],
 			["asciiflow","https://asciiflow.com/"],
 			["tiobeIndex","https://www.tiobe.com/tiobe-index/"],
 			["PYPL","https://pypl.github.io/PYPL.html"],
