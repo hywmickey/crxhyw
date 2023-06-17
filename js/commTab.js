@@ -13,6 +13,7 @@ function commTab() {
 		[
 			["IP","https://www.cip.cc/"],
 			["日历", "https://www.baidu.com/s?wd=日历"],
+			["New Bing","https://bing.vcanbb.top/"],
 			["dedao", "https://www.dedao.cn/"],
 			["trello", "https://trello.com/"],
 			["ghproxy", "https://ghproxy.com/"],
