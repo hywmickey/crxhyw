@@ -17,6 +17,7 @@ function commTab() {
 			["不良林","https://bulianglin.com/"],
 			["日历", "https://www.baidu.com/s?wd=日历"],
 			["New Bing","https://bing.vcanbb.top/"],
+			["ChatGPT","https://chat.zhile.io/"],
 			["dedao", "https://www.dedao.cn/"],
 			["trello", "https://trello.com/"],
 			["ghproxy", "https://ghproxy.com/"],
