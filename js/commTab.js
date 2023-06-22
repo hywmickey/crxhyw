@@ -12,6 +12,9 @@ function commTab() {
 		],
 		[
 			["IP","https://www.cip.cc/"],
+			["whoer","https://whoer.net/"],
+			["ITdog","https://www.itdog.cn/"],
+			["不良林","https://bulianglin.com/"],
 			["日历", "https://www.baidu.com/s?wd=日历"],
 			["New Bing","https://bing.vcanbb.top/"],
 			["dedao", "https://www.dedao.cn/"],
