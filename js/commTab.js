@@ -20,7 +20,7 @@ function commTab() {
 			["ChatGPT","https://chat.zhile.io/"],
 			["dedao", "https://www.dedao.cn/"],
 			["trello", "https://trello.com/"],
-			["ghproxy", "https://ghproxy.com/"],
+			["GitHub代理", "https://ghproxy.com/"],
 			["asciiflow","https://asciiflow.com/"],
 			["tiobeIndex","https://www.tiobe.com/tiobe-index/"],
 			["PYPL","https://pypl.github.io/PYPL.html"],
