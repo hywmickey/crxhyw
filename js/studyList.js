@@ -6,6 +6,7 @@ function studyList() {
 			["geeksforgeeks","https://www.geeksforgeeks.org/fundamentals-of-algorithms/"],
 			["hackerrank","https://www.hackerrank.com/dashboard"],
 			["信息学奥林匹克竞赛","https://oi-wiki.org/"],
+			["代码随想录","https://www.programmercarl.com/"],
 			["开源算法库","https://the-algorithms.com/zh_Hans"],
 			["Algorithms", "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html"],
 			["VisuAlgo", "https://visualgo.net/zh/"],
