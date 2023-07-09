@@ -30,6 +30,7 @@ function studyList() {
 			["Web API", "https://developer.mozilla.org/zh-CN/docs/Web/API"],
 			["CSDN", "https://blog.csdn.net/nav/watchers"],
 			["李文周的博客", "https://www.liwenzhou.com/"],
+			["小林coding","https://xiaolincoding.com/"],
 			["廖雪峰的官方网站", "https://www.liaoxuefeng.com/"],
 			["地鼠文档", "http://wen.topgoer.com/"],
 			["Go指南", "https://tour.go-zh.org/"],
