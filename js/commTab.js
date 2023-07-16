@@ -12,6 +12,7 @@ function commTab() {
 		],
 		[
 			["IP","https://www.cip.cc/"],
+			["ipleak","https://ipleak.net/"],
 			["whoer","https://whoer.net/"],
 			["ITdog","https://www.itdog.cn/"],
 			["不良林","https://bulianglin.com/"],
