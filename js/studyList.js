@@ -7,6 +7,7 @@ function studyList() {
 			["hackerrank","https://www.hackerrank.com/dashboard"],
 			["信息学奥林匹克竞赛","https://oi-wiki.org/"],
 			["代码随想录","https://www.programmercarl.com/"],
+			["Hello 算法","https://www.hello-algo.com/"],
 			["开源算法库","https://the-algorithms.com/zh_Hans"],
 			["Algorithms", "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html"],
 			["VisuAlgo", "https://visualgo.net/zh/"],
