@@ -26,7 +26,7 @@ function studyList() {
 			["Linux系统编程", "https://www.bilibili.com/video/BV1gb411L7fK"],
 			["算法导论","https://www.bilibili.com/video/BV1B34y1S7Js/"],
 			["深入理解计算机系统", "https://www.bilibili.com/video/BV1Vh411r7ef/"],
-			["Linux Man", "https://www.kernel.org/doc/man-pages/"],
+			["Linux Man", "https://man7.org/linux/man-pages/index.html"],
 			["网页配色", "http://tool.c7sky.com/webcolor/#character_3"],
 			["Web API", "https://developer.mozilla.org/zh-CN/docs/Web/API"],
 			["CSDN", "https://blog.csdn.net/nav/watchers"],
