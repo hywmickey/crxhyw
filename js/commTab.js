@@ -18,7 +18,7 @@ function commTab() {
 			["whoer","https://whoer.net/"],
 			["ITdog","https://www.itdog.cn/"],
 			["不良林","https://bulianglin.com/"],
-			["日历", "https://www.baidu.com/s?wd=日历"],
+			["日历", "https://www.rili.com.cn/"],
 			["excalidraw","https://excalidraw.com/"],
 			["New Bing","https://bing.vcanbb.top/"],
 			//["ChatGPT","https://chat.zhile.io/"],
