@@ -3,8 +3,10 @@ function studyList() {
 	bookMarkList = [
 		[
 			["Golang","https://golang.google.cn/doc/"],
+			["Python","https://www.python.org/doc/"],
 			["PHP","https://www.php.net/manual/"],
 			["Java","https://www.liaoxuefeng.com/wiki/1252599548343744"],
+			["lua","https://www.lua.org/docs.html"],
 			["Web Dev","https://developer.mozilla.org/en-US/docs/Learn"],
 			["Web API","https://developer.mozilla.org/en-US/docs/Web/API"],
 			["ECMAScript","https://www.runoob.com/w3cnote/es6-concise-tutorial.html"],
@@ -15,6 +17,9 @@ function studyList() {
 			["grpc","https://grpc.io/docs/languages/go/quickstart/"],
 			["protobuf","https://protobuf.dev/"],
 			["vuejs","https://vuejs.org/guide/"],
+			["YII","https://www.yiiframework.com/doc/guide/"],
+			["Django","https://docs.djangoproject.com/"],
+			["SpringBoot","https://spring.io/guides/"],
 		],
 		[
 			["nginx","https://docs.nginx.com/nginx/"],
