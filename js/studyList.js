@@ -38,6 +38,7 @@ function studyList() {
 			["etcd","https://etcd.io/docs/"],
 			["zookeeper","https://zookeeper.apache.org/doc/current/"],
 			["clickhouse","https://clickhouse.com/docs"],
+			["鸟哥Linux","https://linux.vbird.org/linux_basic/"],
 			["Linux Man", "https://man7.org/linux/man-pages/index.html"],
 			["ELK","https://blog.csdn.net/weixin_40228200/article/details/123930498"],
 			["spark","https://spark.apache.org/"],
