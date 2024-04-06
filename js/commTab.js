@@ -105,6 +105,15 @@ function commTab() {
 			["磐他","https://space.bilibili.com/533675317/dynamic"],
 			["进击的沈帅波","https://space.bilibili.com/19201320/dynamic"],
 			["作业帮","https://news.so.com/ns?q=%E4%BD%9C%E4%B8%9A%E5%B8%AE"],
+			["touzid", "https://www.touzid.com/"],
+			["berkshire", "https://www.cnbc.com/berkshire-hathaway-portfolio/"],
+			["voxchina", "http://voxchina.org/"],
+			["MBA智库百科", "https://www.mbalib.com/"],
+		],
+		[
+			["刷新世界观合集","https://www.bilibili.com/read/readlist/rl244892"],
+			["思维新学府","https://space.bilibili.com/1147366908/video"],
+			["忽悠的原理与技巧","https://zhuanlan.zhihu.com/p/19977877"],
 		],
 		[
 			["便签", "https://yun.smartisan.com/#/notes"],
