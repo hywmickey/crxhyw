@@ -10,7 +10,7 @@ function studyList() {
 			["Web Dev","https://developer.mozilla.org/en-US/docs/Learn"],
 			["Web API","https://developer.mozilla.org/en-US/docs/Web/API"],
 			["ECMAScript","https://www.runoob.com/w3cnote/es6-concise-tutorial.html"],
-			["Golang标准库", "https://pkg.go.dev/"],
+			["Golang标准库", "https://pkg.go.dev/std"],
 			["gorm","https://gorm.io/docs/"],
 			["gin","https://gin-gonic.com/docs/"],
 			["go-zero","https://go-zero.dev/docs/tasks"],
