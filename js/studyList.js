@@ -65,7 +65,6 @@ function studyList() {
 			["李文周的博客", "https://www.liwenzhou.com/"],
 			["地鼠文档", "http://wen.topgoer.com/"],
 			["书栈网", "https://www.bookstack.cn/"],
-			["Linux From Scratch", "https://www.linuxfromscratch.org/lfs/read.html"],
 		],
 		[
 			["geeksforgeeks","https://www.geeksforgeeks.org/fundamentals-of-algorithms/"],
@@ -108,6 +107,11 @@ function studyList() {
 			["linux265", "https://linux265.com/"],
 			["64k动画", "https://www.pouet.net/"],
 			["搜榜", "https://www.bjsoubang.com/"]
+		],
+		[
+			["Linux From Scratch", "https://www.linuxfromscratch.org/lfs/read.html"],
+			["Gentoo","https://www.gentoo.org/support/documentation/"],
+			["Arch","https://wiki.archlinux.org/title/General_recommendations"],
 		],
 		[
 			["Oxford", "https://www.oxfordlearnersdictionaries.com/"],
