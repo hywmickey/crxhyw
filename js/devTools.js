@@ -3,6 +3,123 @@ function devTools() {
 	contentAreaDiv.innerHTML = "";
     contentAreaDiv.style.color="#fff";
     contentAreaDiv.style.fontSize="16px";
+    
+    // 数学工具
+    // 增长率
+    mathDiv = document.createElement("div");
+    h3Obj = document.createElement("h3");
+    h3Obj.textContent = "数学工具";
+    h3Obj.style.backgroundColor="#222";
+    h3Obj.style.padding = "10px 5px";
+    mathDiv.appendChild(h3Obj);
+
+    labelObj = document.createElement("label");
+    labelObj.textContent ="数字1:";
+
+    inputObj = document.createElement("input");
+    inputObj.setAttribute("id","percent_num1");
+
+    labelObj.appendChild(inputObj);
+    mathDiv.appendChild(labelObj);
+
+    labelObj = document.createElement("label");
+    labelObj.textContent ="数字2:";
+
+    inputObj = document.createElement("input");
+    inputObj.setAttribute("id","percent_num2");
+
+    labelObj.appendChild(inputObj);
+    mathDiv.appendChild(labelObj);
+
+    labelObj = document.createElement("label");
+    labelObj.textContent ="期数:";
+    inputObj = document.createElement("input");
+    inputObj.setAttribute("id","terms");
+    inputObj.value = 1;
+    labelObj.appendChild(inputObj);
+    mathDiv.appendChild(labelObj);
+
+
+    buttonObj = document.createElement("button");
+    buttonObj.innerHTML="计算";
+    buttonObj.onclick=calculateIncrease
+    mathDiv.appendChild(buttonObj)
+
+    
+    spanObj = document.createElement("span");
+    spanObj.style.paddingLeft="5px";
+    spanObj.innerHTML="--%";
+    spanObj.setAttribute("id", "percent_result");
+    mathDiv.appendChild(spanObj);
+
+    spanObj = document.createElement("span");
+    spanObj.style.paddingLeft="5px";
+    spanObj.innerHTML="--%";
+    spanObj.setAttribute("id", "increase_ratio");
+    mathDiv.appendChild(spanObj);
+    contentAreaDiv.appendChild(mathDiv);
+
+    // 平均增长率
+    percentavgDiv =  document.createElement("div");
+    labelObj = document.createElement("label");
+    labelObj.textContent ="增长率%:";
+    inputObj = document.createElement("input");
+    inputObj.setAttribute("id","percent_num");
+    labelObj.appendChild(inputObj);
+    percentavgDiv.appendChild(labelObj);
+
+
+    labelObj = document.createElement("label");
+    labelObj.textContent ="期数:";
+    inputObj = document.createElement("input");
+    inputObj.setAttribute("id","percent_terms");
+    inputObj.value = 1;
+    labelObj.appendChild(inputObj);
+    percentavgDiv.appendChild(labelObj);
+    
+    buttonObj = document.createElement("button");
+    buttonObj.innerHTML="平均增长率";
+    buttonObj.onclick=calculateIncreaseavg
+    percentavgDiv.appendChild(buttonObj)
+
+    spanObj = document.createElement("span");
+    spanObj.style.paddingLeft="5px";
+    spanObj.innerHTML="--%";
+    spanObj.setAttribute("id", "percent_avg");
+    percentavgDiv.appendChild(spanObj);
+
+    contentAreaDiv.appendChild(percentavgDiv);
+
+    // 累计增长率
+    percentIncDiv =  document.createElement("div");
+
+    labelObj = document.createElement("label");
+    labelObj.textContent ="增长率%:";
+    inputObj = document.createElement("input");
+    inputObj.setAttribute("id","per_ratio");
+    labelObj.appendChild(inputObj);
+    percentIncDiv.appendChild(labelObj);
+
+    labelObj = document.createElement("label");
+    labelObj.textContent ="期数:";
+    inputObj = document.createElement("input");
+    inputObj.setAttribute("id","incr_terms");
+    inputObj.value = 1;
+    labelObj.appendChild(inputObj);
+    percentIncDiv.appendChild(labelObj);
+
+    buttonObj = document.createElement("button");
+    buttonObj.innerHTML="累计增长率";
+    buttonObj.onclick=calculateIncrTotal
+    percentIncDiv.appendChild(buttonObj)
+
+    spanObj = document.createElement("span");
+    spanObj.style.paddingLeft="5px";
+    spanObj.innerHTML="--%";
+    spanObj.setAttribute("id", "incr_total");
+    percentIncDiv.appendChild(spanObj);
+    
+    contentAreaDiv.appendChild(percentIncDiv);
 
     // 时间戳转时间
     timestampToTimeDiv =  document.createElement("div");
@@ -119,6 +236,79 @@ function devTools() {
     contentAreaDiv.appendChild(urlParseDiv);
     
 }
+
+// 计算百分比
+function calculateIncrease(e) {
+    num1 = document.getElementById("percent_num1");
+    if(isNaN(num1.value)) {
+        alert("第一个值不是数字");
+        return;
+    }
+
+    num2 = document.getElementById("percent_num2");
+    if(isNaN(num2.value)) {
+        alert("第二个值不是数字");
+        return;
+    }
+
+    terms = document.getElementById("terms");
+    if(isNaN(terms.value)) {
+        alert("期数不是数字");
+        return;
+    }
+
+    diffnum= (num2.value - num1.value)/num1.value ;
+    //percentNum = Math.round(diffnum);
+    //alert(diffnum);
+    percentResult = document.getElementById("percent_result");
+    percentResult.innerHTML =  (diffnum*100).toFixed(2)+"%";
+
+    inceaseRation = Math.pow(diffnum+1,1/terms.value)-1;
+    increaseRatio= document.getElementById("increase_ratio");
+    increaseRatio.innerHTML =  (inceaseRation*100).toFixed(2)+"%";
+    
+}
+
+// 计算平均增长率
+function calculateIncreaseavg(e){
+    percentnum = document.getElementById("percent_num");
+    if (isNaN(percentnum.value)) {
+        alert("输入的百分比不是数字");
+        return
+    }
+
+    terms = document.getElementById("percent_terms");
+    if (isNaN(terms.value)) {
+        alert("输入的期数不是数字");
+        return
+    }
+
+    avgRatio = Math.pow(percentnum.value/100+1,1/terms.value)-1;
+    
+    percentAvg = document.getElementById("percent_avg");
+    percentAvg.innerHTML = (avgRatio*100).toFixed(2)+"%";
+
+}
+
+// 计算累计增长率
+function calculateIncrTotal(e) {
+    percentnum = document.getElementById("per_ratio");
+    if (isNaN(percentnum.value)) {
+        alert("输入的百分比不是数字");
+        return
+    }
+
+    terms = document.getElementById("incr_terms");
+    if (isNaN(terms.value)) {
+        alert("输入的期数不是数字");
+        return
+    }
+    totalRatio = Math.pow(percentnum.value/100+1,terms.value)-1
+    
+    totalRatioObj = document.getElementById("incr_total");
+    totalRatioObj.innerHTML = (totalRatio*100).toFixed(2)+"%";
+}
+
 // json 转form
 function devToolsJsonObjToForm(jsonObj){
     strForm = "";
