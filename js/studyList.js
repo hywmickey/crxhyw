@@ -48,6 +48,7 @@ function studyList() {
 			["API Gateway","https://blog.csdn.net/github_35631540/article/details/115761241"],
 			["鸟哥Linux","https://linux.vbird.org/linux_basic/"],
 			["Linux Man", "https://man7.org/linux/man-pages/index.html"],
+			["Xcode Man","https://keith.github.io/xcode-man-pages/"],
 		],
 		[
 			["架构驿站","https://jiagouyizhan.com/"],
