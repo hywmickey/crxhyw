@@ -9,6 +9,7 @@ function commTab() {
 			["v2rayse","https://v2rayse.com/"],
 			["getafreenode","https://getafreenode.com/node.php?uuid=9E22EDD9-BE7C-6D3D-6540-372EA00E5CB5"],
 			["clashfree","https://clashfree.eu.org/"],
+			["逗比根据地","https://doubibackup.com/"],
 		],
 		[
 			["IP","https://www.cip.cc/"],
