@@ -229,8 +229,21 @@ function jb51page() {
 }
 
 function biliPage(){
-    //document.body.innerHTML = "禁止查看";
-    //alert("禁止查看");
+    // 判断 indow.location.href 是不是包含 https://www.bilibili.com/?
+    if (window.location.host == 'www.bilibili.com' && window.location.pathname == "/") {
+        document.head.innerHTML = '<style>body{background-color:black;}</style>';
+        document.body.innerHTML = '<div style="width:100%;height:100vh;background-color:black;"></div>';
+    } else if (window.location.href == "https://t.bilibili.com/?tab=video") { // 视频页
+        var style = document.createElement('style');
+        style.innerHTML = '.bili-dyn-list__item {margin: 0px;display:inline-block;width: 33%;} ';
+        style.innerHTML += '.bili-dyn-publishing {display:none;} ';
+        style.innerHTML += 'aside.left,aside.right {display:none;} ';
+        style.innerHTML += '#app > div.bili-dyn-home--member {width: 100%;} ';
+        style.innerHTML += '#app > div.bili-dyn-home--member > main {width:100%;} ';
+        style.innerHTML += '.bili-dyn-item__main {padding: 0 0 0 0;} ';
+        //style.innerHTML += '.bili-dyn-avatar {display:none;} ';
+        document.head.appendChild(style);
+    }
 }
 
 
