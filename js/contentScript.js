@@ -233,7 +233,7 @@ function biliPage(){
     if (window.location.host == 'www.bilibili.com' && window.location.pathname == "/") {
         document.head.innerHTML = '<style>body{background-color:black;}</style>';
         document.body.innerHTML = '<div style="width:100%;height:100vh;background-color:black;"></div>';
-    } else if (window.location.href == "https://t.bilibili.com/?tab=video") { // 视频页
+    } else if (window.location.host == "t.bilibili.com") { // 视频页
         var style = document.createElement('style');
         style.innerHTML = '.bili-dyn-list__item {margin: 0px;display:inline-block;width: 33%;} ';
         style.innerHTML += '.bili-dyn-publishing {display:none;} ';
