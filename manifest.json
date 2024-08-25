@@ -9,7 +9,7 @@
 		"48": "img/icon48.png",
 		"128": "img/icon128.png"
 	},
-	"browser_action": 
+	"action": 
 	{
 		"default_icon": "img/icon128.png",
 		"default_title" : "hyw的插件",
@@ -17,7 +17,7 @@
 	},
 	"background":
 	{
-		"scripts": ["js/background.js"]
+		"service_worker": "js/background.js"
 	},
 
 	"content_scripts":
@@ -32,7 +32,8 @@
 	[
 		"contextMenus",
 		"storage",
-		"bookmarks"
+		"bookmarks",
+		"windows"
 	],
 
 	"chrome_url_overrides":
