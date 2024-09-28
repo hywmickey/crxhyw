@@ -54,6 +54,7 @@ function studyList() {
 			["Xcode Man","https://keith.github.io/xcode-man-pages/"],
 		],
 		[
+			["w3schools","https://www.w3schools.com/"],
 			["架构驿站","https://jiagouyizhan.com/"],
 			["小徐先生编程世界","https://space.bilibili.com/317473362/video"],
 			["IT老齐架构300讲","https://space.bilibili.com/359351574/channel/collectiondetail?sid=34444"],
@@ -71,6 +72,7 @@ function studyList() {
 			["李文周的博客", "https://www.liwenzhou.com/"],
 			["地鼠文档", "http://wen.topgoer.com/"],
 			["书栈网", "https://www.bookstack.cn/"],
+			["TecMint","https://www.tecmint.com/"],
 		],
 		[
 			["geeksforgeeks","https://www.geeksforgeeks.org/fundamentals-of-algorithms/"],
