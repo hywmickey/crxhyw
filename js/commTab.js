@@ -7,7 +7,7 @@ function commTab() {
 			["软件替换","https://alternativeto.net/"],
 			["v2free","https://cdn.v2free.net/user"],
 			["v2rayse","https://v2rayse.com/"],
-			["getafreenode","https://getafreenode.com/node.php?uuid=9E22EDD9-BE7C-6D3D-6540-372EA00E5CB5"],
+			["getafreenode","https://getafreenode.com/"],
 			["NoMoreWalls","https://peasoft.github.io/NWalls.html"],
 			["clashfree","https://clashfree.eu.org/"],
 			["逗比根据地","https://doubibackup.com/"],
@@ -65,7 +65,8 @@ function commTab() {
 			["杠杆ETF", "https://etfdb.com/themes/leveraged-etfs/"],
 			["美国货币市场基金监控","https://www.financialresearch.gov/money-market-funds/us-mmfs-investments-by-fund-category/"],
 			["资产负债表趋势","https://www.federalreserve.gov/monetarypolicy/bst_recenttrends.htm"],
-			["berkshire", "https://stockzoa.com/fund/berkshire-hathaway-inc/"]
+			["berkshire", "https://stockzoa.com/fund/berkshire-hathaway-inc/"],
+			["生活成本","https://www.numbeo.com/cost-of-living/"]
 
 		],
 		[
