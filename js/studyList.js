@@ -8,6 +8,8 @@ function studyList() {
 			["Java","https://www.liaoxuefeng.com/wiki/1252599548343744"],
 			["cplusplus","https://cplusplus.com/"],
 			["cppreference","https://cppreference.com/"],
+			["Make","https://www.gnu.org/software/make/manual/make.html"],
+			["Cmake","https://cmake.org/"],
 			["lua","https://www.lua.org/docs.html"],
 			["Web Dev","https://developer.mozilla.org/en-US/docs/Learn"],
 			["Web API","https://developer.mozilla.org/en-US/docs/Web/API"],
