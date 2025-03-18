@@ -64,7 +64,7 @@
                 type: 'popup',
                 left:1200,
                 top:0,
-                width: 500,
+                width: 700,
                 height: 800,
                 focused: true,
             } ,
