@@ -71,6 +71,7 @@ function studyList() {
 			["Coding Master","https://space.bilibili.com/41036636/channel/collectiondetail?sid=1096"],
 			["补给站Linux内核","https://space.bilibili.com/1270307228/article"],
 			["CPP开发","https://space.bilibili.com/1112739297/video"],
+			["cppguide.cn", "https://cppguide.cn/"],
 			["golang云原生","https://space.bilibili.com/1522375372/video"],
 			["阿布编程","https://space.bilibili.com/261582436/video"],
 			["Play with Kubernetes","https://labs.play-with-k8s.com/"],
