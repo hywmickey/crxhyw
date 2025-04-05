@@ -58,6 +58,7 @@ function studyList() {
 			["Xcode Man","https://keith.github.io/xcode-man-pages/"],
 		],
 		[
+			["CS自学指南","https://csdiy.wiki/"],
 			["w3schools","https://www.w3schools.com/"],
 			["javatpoint","https://www.javatpoint.com/"],
 			["架构驿站","https://jiagouyizhan.com/"],
