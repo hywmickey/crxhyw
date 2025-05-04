@@ -231,8 +231,8 @@ function jb51page() {
 function biliPage(){
     // 判断 indow.location.href 是不是包含 https://www.bilibili.com/?
     if (window.location.host == 'www.bilibili.com' && window.location.pathname == "/") {
-        document.head.innerHTML = '<style>body{background-color:black;}</style>';
-        document.body.innerHTML = '<div style="width:100%;height:100vh;background-color:black;"></div>';
+        //document.head.innerHTML = '<style>body{background-color:black;}</style>';
+        //document.body.innerHTML = '<div style="width:100%;height:100vh;background-color:black;"></div>';
     } else if (window.location.host == "t.bilibili.com") { // 视频页
         var style = document.createElement('style');
         style.innerHTML = '.bili-dyn-list__item {margin: 0px;display:inline-block;width: 33%;} ';
