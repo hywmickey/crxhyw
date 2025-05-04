@@ -18,7 +18,7 @@ if(wxre.test(strhref)) {
     wxpage();
 } else if(bdfyre.test(strhref)) {
     //commonsetting();
-    //bdfypage();
+    bdfypage();
 } else if(bdre.test(strhref)) {
     //commonsetting();
     //bdpage();
@@ -133,10 +133,10 @@ function wxpage() {
 function bdfypage() {
 
     // 删除左边导航
-    var sidenav = document.querySelector("#side-nav");
-    sidenav.parentNode.removeChild(sidenav);
+    // var sidenav = document.querySelector("#side-nav");
+    // sidenav.parentNode.removeChild(sidenav);
     // 正文内容紧贴窗口左边
-    document.querySelector("#main-outer > div > div").style.margin = '0px';
+    // document.querySelector("#main-outer > div > div").style.margin = '0px';
     // 删除页面右边广告
     var transOtherRight = document.querySelector("#transOtherRight")
     transOtherRight.parentNode.removeChild(transOtherRight);
