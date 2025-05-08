@@ -11,6 +11,7 @@ function commTab() {
 			["NoMoreWalls","https://peasoft.github.io/NWalls.html"],
 			["clashfree","https://clashfree.eu.org/"],
 			["逗比根据地","https://doubibackup.com/"],
+			["免费修理手册","https://zh.ifixit.com"],
 		],
 		[
 			["IP","https://www.cip.cc/"],

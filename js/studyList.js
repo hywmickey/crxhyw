@@ -55,7 +55,15 @@ function studyList() {
 			["API Gateway","https://blog.csdn.net/github_35631540/article/details/115761241"],
 			["鸟哥Linux","https://linux.vbird.org/linux_basic/"],
 			["Linux Man", "https://man7.org/linux/man-pages/index.html"],
+			["Coreutils","https://www.gnu.org/software/coreutils/manual/html_node/"],
+			["Glibc","https://sourceware.org/glibc/manual/latest/html_node/index.html"],
 			["Xcode Man","https://keith.github.io/xcode-man-pages/"],
+		],
+		[
+			["LFS", "https://www.linuxfromscratch.org/lfs/read.html"],
+			["Gentoo","https://www.gentoo.org/support/documentation/"],
+			["Arch","https://wiki.archlinux.org/title/General_recommendations"],
+			["Debian手册", "https://www.debian.org/doc/manuals/debian-reference/"]
 		],
 		[
 			["CS自学指南","https://csdiy.wiki/"],
@@ -123,11 +131,6 @@ function studyList() {
 			["linux265", "https://linux265.com/"],
 			["64k动画", "https://www.pouet.net/"],
 			["搜榜", "https://www.bjsoubang.com/"]
-		],
-		[
-			["Linux From Scratch", "https://www.linuxfromscratch.org/lfs/read.html"],
-			["Gentoo","https://www.gentoo.org/support/documentation/"],
-			["Arch","https://wiki.archlinux.org/title/General_recommendations"],
 		],
 		[
 			["Oxford", "https://www.oxfordlearnersdictionaries.com/"],
