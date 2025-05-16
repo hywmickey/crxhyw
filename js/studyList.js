@@ -88,6 +88,7 @@ function studyList() {
 			["李文周的博客", "https://www.liwenzhou.com/"],
 			["地鼠文档", "http://wen.topgoer.com/"],
 			["书栈网", "https://www.bookstack.cn/"],
+			["刘丹冰作品集","https://zhuanlan.zhihu.com/p/513990972"],
 			["TecMint","https://www.tecmint.com/"],
 		],
 		[

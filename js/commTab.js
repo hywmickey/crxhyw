@@ -59,7 +59,8 @@ function commTab() {
 			["GitOpt", "../html/gitopt.html"],
 			["goland Activation", "http://www.lookdiv.com/"],
 			["死亡公司公墓", "https://www.itjuzi.com/deathCompany"],
-			["ssyoutube","https://zh.ssyoutube.com/"]
+			["ssyoutube","https://zh.ssyoutube.com/"],
+			["tinyteams","https://tinyteams.xyz/"],
 		],
 		[
 			["美投讲美股","https://www.zhihu.com/people/mei-tou-91-7"],
