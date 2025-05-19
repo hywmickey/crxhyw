@@ -44,6 +44,7 @@ function commTab() {
 			["讯飞快读", "https://www.ffkuaidu.com/"],
 			["vocabulary", "https://www.vocabulary.com/"],
 			["全历史", "https://www.allhistory.com/"],
+			["看见统计","https://seeing-theory.brown.edu/cn.html"],
 			["护照指数","https://www.passportindex.org/"],
 			["真实地图", "https://thetruesize.com/"],
 			["世界地形图","https://www.maptiler.com/maps/"],
