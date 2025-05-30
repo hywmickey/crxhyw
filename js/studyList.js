@@ -33,6 +33,7 @@ function studyList() {
 			["Mongodb","https://www.mongodb.com/docs"],
 			["Docker","https://docs.docker.com/manuals/"],
 			["K8s","https://kubernetes.io/zh-cn/docs/home/"],
+			["K3s","https://docs.k3s.io/"],
 			["Kafka","https://kafka.apache.org/documentation/"],
 			["RocketMQ","https://rocketmq.apache.org/docs/"],
 			["ES","https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html"],
