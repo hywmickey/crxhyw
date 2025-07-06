@@ -56,6 +56,7 @@ function studyList() {
 			["API Gateway","https://blog.csdn.net/github_35631540/article/details/115761241"],
 			["鸟哥Linux","https://linux.vbird.org/linux_basic/"],
 			["Linux Man", "https://man7.org/linux/man-pages/index.html"],
+			["Linux Docs", "https://linux.die.net/"],
 			["Coreutils","https://www.gnu.org/software/coreutils/manual/html_node/"],
 			["Glibc","https://sourceware.org/glibc/manual/latest/html_node/index.html"],
 			["Xcode Man","https://keith.github.io/xcode-man-pages/"],
