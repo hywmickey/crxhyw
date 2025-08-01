@@ -31,6 +31,8 @@ function studyList() {
 			["PostgreSQL","https://www.postgresql.org/docs/current/"],
 			["Redis","https://redis.io/docs/"],
 			["Mongodb","https://www.mongodb.com/docs"],
+			["云原生计算基金会","https://www.cncf.io/"],
+			["云原生全景","https://landscape.cncf.io/"],
 			["Docker","https://docs.docker.com/manuals/"],
 			["K8s","https://kubernetes.io/zh-cn/docs/home/"],
 			["K3s","https://docs.k3s.io/"],
