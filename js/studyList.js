@@ -75,6 +75,7 @@ function studyList() {
 			["javatpoint","https://www.javatpoint.com/"],
 			["架构驿站","https://jiagouyizhan.com/"],
 			["小徐先生编程世界","https://space.bilibili.com/317473362/video"],
+			["小白debug","https://space.bilibili.com/302188068"],
 			["爱编程的大丙","https://subingwen.cn/"],
 			["IT老齐架构300讲","https://space.bilibili.com/359351574/channel/collectiondetail?sid=34444"],
 			["Go程序设计语言","https://space.bilibili.com/283633806/channel/collectiondetail?sid=418349&ctype=0"],
