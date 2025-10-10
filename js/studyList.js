@@ -91,6 +91,8 @@ function studyList() {
 			["Play with Kubernetes","https://labs.play-with-k8s.com/"],
 			["幼麟实验室","https://space.bilibili.com/567195437/video"],
 			["李文周的博客", "https://www.liwenzhou.com/"],
+			["秀才的进阶之路","https://golangstar.cn/"],
+			["帅地玩编程","https://www.iamshuaidi.com/"],
 			["地鼠文档", "http://wen.topgoer.com/"],
 			["书栈网", "https://www.bookstack.cn/"],
 			["刘丹冰作品集","https://zhuanlan.zhihu.com/p/513990972"],
