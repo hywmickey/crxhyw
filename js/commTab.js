@@ -62,6 +62,7 @@ function commTab() {
 			["死亡公司公墓", "https://www.itjuzi.com/deathCompany"],
 			["ssyoutube","https://zh.ssyoutube.com/"],
 			["tinyteams","https://tinyteams.xyz/"],
+			["编程随想","https://program-think.blogspot.com/"],
 		],
 		[
 			["美投讲美股","https://www.zhihu.com/people/mei-tou-91-7"],
