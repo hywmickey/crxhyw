@@ -156,6 +156,7 @@ function studyList() {
 			["LDOCE", "https://www.ldoceonline.com/"],
 			["am774","http://www.am774.com/textbook/textbook.shtml"],
 			["EF", "https://www.ef.com/wwen/english-resources/"],
+			["BBC English","http://bbclearningenglish.com/"],
 		],
 	];
 	/*
