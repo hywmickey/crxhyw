@@ -57,6 +57,7 @@ function studyList() {
 			["Seata","https://seata.apache.org/docs/user/quickstart/"],
 			["API Gateway","https://blog.csdn.net/github_35631540/article/details/115761241"],
 			["鸟哥Linux","https://linux.vbird.org/linux_basic/"],
+			["git docs","https://git-scm.com/docs"],
 		],
 		[
 			["Linux Man", "https://man7.org/linux/man-pages/index.html"],
