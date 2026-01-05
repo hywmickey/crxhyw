@@ -108,6 +108,8 @@ function studyList() {
 			["刘丹冰作品集","https://zhuanlan.zhihu.com/p/513990972"],
 			["TecMint","https://www.tecmint.com/"],
 			["Golang并发编程","https://space.bilibili.com/170957273/lists/5601350?type=season"],
+			["civitai", "https://civitai.com/"],
+			["huggingface", "https://huggingface.co/"],
 		],
 		[
 			["roadmap","https://roadmap.sh/"],
