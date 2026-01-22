@@ -108,6 +108,8 @@ function studyList() {
 			["刘丹冰作品集","https://zhuanlan.zhihu.com/p/513990972"],
 			["TecMint","https://www.tecmint.com/"],
 			["Golang并发编程","https://space.bilibili.com/170957273/lists/5601350?type=season"],
+			["Go语言圣经", "https://gopl-zh.github.io/index.html"],
+			["Go语言高级编程", "https://chai2010.cn/advanced-go-programming-book/index.html"],
 		],
 		[
 			["stablediffusio", "https://stablediffusionweb.com/"],
