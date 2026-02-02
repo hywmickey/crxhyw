@@ -168,6 +168,8 @@ function studyList() {
 			["am774","http://www.am774.com/textbook/textbook.shtml"],
 			["EF", "https://www.ef.com/wwen/english-resources/"],
 			["BBC English","https://www.bbc.co.uk/learningenglish/english/index"],
+			["Audio To Text","https://audiototext.com/"],
+			["SVG to PNG","https://svgtopng.com/"],
 		],
 	];
 	/*
