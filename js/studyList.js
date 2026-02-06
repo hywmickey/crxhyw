@@ -132,6 +132,9 @@ function studyList() {
 			["algorithm", "https://algorithm-visualizer.org/"],
 		],
 		[
+			["动手学深度学习","https://zh.d2l.ai/index.html"],
+		],
+		[
 			["redisTry", "https://try.redis.io/"],
 			["replit","https://replit.com/"],
 			["Mooc", "https://www.icourse163.org/"],
