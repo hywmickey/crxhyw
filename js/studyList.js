@@ -59,6 +59,7 @@ function studyList() {
 			["鸟哥Linux","https://linux.vbird.org/linux_basic/"],
 			["git docs","https://git-scm.com/docs"],
 			["github copilot","https://docs.github.com/zh/copilot"],
+			["trendshift", "https://trendshift.io/"],
 		],
 		[
 			["Linux Man", "https://man7.org/linux/man-pages/index.html"],
@@ -133,6 +134,8 @@ function studyList() {
 		],
 		[
 			["动手学深度学习","https://zh.d2l.ai/index.html"],
+			["openclaw", "https://openclaw.ai/"],
+			["clawhub", "https://clawhub.ai/"],
 		],
 		[
 			["redisTry", "https://try.redis.io/"],
