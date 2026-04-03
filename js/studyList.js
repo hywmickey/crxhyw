@@ -2,6 +2,9 @@ function studyList() {
 
 	bookMarkList = [
 		[
+			["GitMCP","https://gitmcp.io/"],
+		],
+		[
 			["Golang","https://golang.google.cn/doc/"],
 			["Python","https://www.python.org/doc/"],
 			["PHP","https://www.php.net/manual/"],
