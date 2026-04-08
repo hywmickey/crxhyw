@@ -2,6 +2,7 @@ function studyList() {
 
 	bookMarkList = [
 		[
+			["TrendShift", "https://trendshift.io/"],
 			["GitMCP", "https://gitmcp.io/"],
 			["Zread", "https://zread.ai/"],
 		],
@@ -63,7 +64,6 @@ function studyList() {
 			["鸟哥Linux","https://linux.vbird.org/linux_basic/"],
 			["git docs","https://git-scm.com/docs"],
 			["github copilot","https://docs.github.com/zh/copilot"],
-			["trendshift", "https://trendshift.io/"],
 		],
 		[
 			["Linux Man", "https://man7.org/linux/man-pages/index.html"],
