@@ -7,6 +7,9 @@ function studyList() {
 			["Zread", "https://zread.ai/"],
 		],
 		[
+			["代理设计模式", "https://adp.xindoo.xyz/"],
+		],
+		[
 			["Golang","https://golang.google.cn/doc/"],
 			["Python","https://www.python.org/doc/"],
 			["PHP","https://www.php.net/manual/"],
