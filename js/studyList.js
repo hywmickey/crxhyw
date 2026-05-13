@@ -7,6 +7,13 @@ function studyList() {
 			["Zread", "https://zread.ai/"],
 		],
 		[
+			["huggingface", "https://huggingface.co/"],
+			["魔搭","https://modelscope.cn/"],
+			["stablediffusio", "https://stablediffusionweb.com/"],
+			["comfy", "https://www.comfy.org/"],
+			["civitai", "https://civitai.com/"],
+		],
+		[
 			["代理设计模式", "https://adp.xindoo.xyz/"],
 		],
 		[
@@ -119,12 +126,6 @@ function studyList() {
 			["Go语言圣经", "https://gopl-zh.github.io/index.html"],
 			["Go语言高级编程", "https://chai2010.cn/advanced-go-programming-book/index.html"],
 			["Go源代码","https://cs.opensource.google/go"],
-		],
-		[
-			["stablediffusio", "https://stablediffusionweb.com/"],
-			["comfy", "https://www.comfy.org/"],
-			["civitai", "https://civitai.com/"],
-			["huggingface", "https://huggingface.co/"],
 		],
 		[
 			["roadmap","https://roadmap.sh/"],
