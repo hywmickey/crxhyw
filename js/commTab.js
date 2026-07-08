@@ -56,6 +56,7 @@ function commTab() {
 			["aliWebmin", "http://47.94.137.24:10000/"],
 			["COVID", "https://voice.baidu.com/act/newpneumonia/newpneumonia/"],
 			["desmos数学计算器", "https://www.desmos.com/"],
+			["wolfram", "https://www.wolframalpha.com/"],
 			["古董电脑室", "https://zhuanlan.zhihu.com/retrocomputing"],
 			["compiler explorer", "https://gcc.godbolt.org"],
 			["GitOpt", "../html/gitopt.html"],
