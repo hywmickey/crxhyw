@@ -71,6 +71,7 @@ function commTab() {
 			["杠杆ETF", "https://etfdb.com/themes/leveraged-etfs/"],
 			["美国货币市场基金监控","https://www.financialresearch.gov/money-market-funds/us-mmfs-investments-by-fund-category/"],
 			["资产负债表趋势","https://www.federalreserve.gov/monetarypolicy/bst_recenttrends.htm"],
+			["US家庭债务", "https://fred.stlouisfed.org/series/HDTGPDUSQ163N"],
 			["berkshire", "https://stockzoa.com/fund/berkshire-hathaway-inc/"],
 			["生活成本","https://www.numbeo.com/cost-of-living/"]
 
