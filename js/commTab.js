@@ -14,6 +14,11 @@ function commTab() {
 			["免费修理手册","https://zh.ifixit.com"],
 		],
 		[
+			["desmos数学计算器", "https://www.desmos.com/"],
+			["Wolfram", "https://www.wolframalpha.com/"],
+			["LaTeX编辑器","https://www.processon.com/latex"],
+		],
+		[
 			["IP","https://www.cip.cc/"],
 			["域名IP地址","https://site.ip138.com/dl.google.com/"],
 			["ipleak","https://ipleak.net/"],
@@ -55,8 +60,6 @@ function commTab() {
 			["statcounter", "http://gsa.statcounter.com/"],
 			["aliWebmin", "http://47.94.137.24:10000/"],
 			["COVID", "https://voice.baidu.com/act/newpneumonia/newpneumonia/"],
-			["desmos数学计算器", "https://www.desmos.com/"],
-			["wolfram", "https://www.wolframalpha.com/"],
 			["古董电脑室", "https://zhuanlan.zhihu.com/retrocomputing"],
 			["compiler explorer", "https://gcc.godbolt.org"],
 			["GitOpt", "../html/gitopt.html"],
