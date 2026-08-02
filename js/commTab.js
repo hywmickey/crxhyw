@@ -17,6 +17,7 @@ function commTab() {
 			["desmos数学计算器", "https://www.desmos.com/"],
 			["Wolfram", "https://www.wolframalpha.com/"],
 			["LaTeX编辑器","https://www.processon.com/latex"],
+			["MathType","https://mathpix.mathtype.top/mathtype"],
 		],
 		[
 			["IP","https://www.cip.cc/"],
