@@ -18,6 +18,7 @@ function commTab() {
 			["Wolfram", "https://www.wolframalpha.com/"],
 			["LaTeX编辑器","https://www.processon.com/latex"],
 			["MathType","https://mathpix.mathtype.top/mathtype"],
+			["LaTeX文档","https://www.overleaf.com/learn"],
 		],
 		[
 			["IP","https://www.cip.cc/"],
