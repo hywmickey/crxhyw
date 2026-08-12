@@ -17,6 +17,8 @@ function studyList() {
 			["代理设计模式", "https://adp.xindoo.xyz/"],
 			["从零开始构建智能体", "https://hello-agents.datawhale.cc/"],
 			["Harness 101", "https://my.feishu.cn/wiki/L082wubkdie8uMkRUjgceKYQnIe"],
+			["skills", "https://www.skills.sh/"],
+			["skillsmp", "https://skillsmp.com/"],
 		],
 		[
 			["Golang","https://golang.google.cn/doc/"],
