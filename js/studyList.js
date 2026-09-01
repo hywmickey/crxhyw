@@ -15,6 +15,7 @@ function studyList() {
 		],
 		[
 			["代理设计模式", "https://adp.xindoo.xyz/"],
+			["人工智能初学者", "https://github.com/microsoft/AI-For-Beginners/tree/main/translations/zh-CN"],
 			["从零开始构建智能体", "https://hello-agents.datawhale.cc/"],
 			["Harness 101", "https://my.feishu.cn/wiki/L082wubkdie8uMkRUjgceKYQnIe"],
 			["skills", "https://www.skills.sh/"],
