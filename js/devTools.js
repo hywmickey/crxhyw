@@ -59,6 +59,64 @@ function devTools() {
     mathDiv.appendChild(spanObj);
     contentAreaDiv.appendChild(mathDiv);
 
+    // 年化增长率
+    cagrDiv =  document.createElement("div");
+
+    labelObj = document.createElement("label");
+    labelObj.textContent ="开始日期:";
+    inputObj = document.createElement("input");
+    inputObj.setAttribute("id","cagr_start_date");
+    inputObj.setAttribute("placeholder","2021-08-31 或 20210831");
+    labelObj.appendChild(inputObj);
+    cagrDiv.appendChild(labelObj);
+
+    labelObj = document.createElement("label");
+    labelObj.textContent ="开始数值:";
+    inputObj = document.createElement("input");
+    inputObj.setAttribute("id","cagr_start_num");
+    labelObj.appendChild(inputObj);
+    cagrDiv.appendChild(labelObj);
+
+    labelObj = document.createElement("label");
+    labelObj.textContent ="结束日期:";
+    inputObj = document.createElement("input");
+    inputObj.setAttribute("id","cagr_end_date");
+    inputObj.setAttribute("placeholder","2021-08-31 或 20210831");
+    labelObj.appendChild(inputObj);
+    cagrDiv.appendChild(labelObj);
+
+    labelObj = document.createElement("label");
+    labelObj.textContent ="结束数值:";
+    inputObj = document.createElement("input");
+    inputObj.setAttribute("id","cagr_end_num");
+    labelObj.appendChild(inputObj);
+    cagrDiv.appendChild(labelObj);
+
+    buttonObj = document.createElement("button");
+    buttonObj.innerHTML="计算";
+    buttonObj.onclick=calculateCagr
+    cagrDiv.appendChild(buttonObj)
+
+    spanObj = document.createElement("span");
+    spanObj.style.paddingLeft="5px";
+    spanObj.innerHTML="--年";
+    spanObj.setAttribute("id", "cagr_years");
+    cagrDiv.appendChild(spanObj);
+
+    spanObj = document.createElement("span");
+    spanObj.style.paddingLeft="5px";
+    spanObj.innerHTML="--%";
+    spanObj.setAttribute("id", "cagr_total");
+    cagrDiv.appendChild(spanObj);
+
+    spanObj = document.createElement("span");
+    spanObj.style.paddingLeft="5px";
+    spanObj.innerHTML="--%";
+    spanObj.setAttribute("id", "cagr_ratio");
+    cagrDiv.appendChild(spanObj);
+
+    contentAreaDiv.appendChild(cagrDiv);
+
     // 平均增长率
     percentavgDiv =  document.createElement("div");
     labelObj = document.createElement("label");
@@ -267,6 +325,73 @@ function calculateIncrease(e) {
     increaseRatio= document.getElementById("increase_ratio");
     increaseRatio.innerHTML =  (inceaseRation*100).toFixed(2)+"%";
     
+}
+
+// 解析 2021-08-31、2021/08/31、20210831 等格式的日期，不合法返回 null
+function devToolsParseDate(dateStr) {
+    matchArr = dateStr.trim().match(/^(\d{4})\D?(\d{1,2})\D?(\d{1,2})$/);
+    if (matchArr == null) {
+        return null;
+    }
+
+    year = parseInt(matchArr[1]);
+    month = parseInt(matchArr[2]);
+    day = parseInt(matchArr[3]);
+
+    dateObj = new Date(year, month-1, day);
+    // 排除 20210231 这种被 Date 自动顺延的非法日期
+    if (dateObj.getFullYear() != year || dateObj.getMonth() != month-1 || dateObj.getDate() != day) {
+        return null;
+    }
+
+    return dateObj;
+}
+
+// 计算年化增长率
+function calculateCagr(e) {
+    startDate = document.getElementById("cagr_start_date");
+    startTimeObj = devToolsParseDate(startDate.value);
+    if (startTimeObj == null) {
+        alert("开始日期不合法，支持 2021-08-31 或 20210831 格式");
+        return;
+    }
+
+    endDate = document.getElementById("cagr_end_date");
+    endTimeObj = devToolsParseDate(endDate.value);
+    if (endTimeObj == null) {
+        alert("结束日期不合法，支持 2021-08-31 或 20210831 格式");
+        return;
+    }
+
+    years = (endTimeObj.getTime() - startTimeObj.getTime())/(365.25*24*3600*1000);
+    if (years <= 0) {
+        alert("结束日期必须晚于开始日期");
+        return;
+    }
+
+    startNum = document.getElementById("cagr_start_num");
+    if (isNaN(startNum.value) || startNum.value == "" || parseFloat(startNum.value) <= 0) {
+        alert("开始数值必须是大于0的数字");
+        return;
+    }
+
+    endNum = document.getElementById("cagr_end_num");
+    if (isNaN(endNum.value) || endNum.value == "" || parseFloat(endNum.value) <= 0) {
+        alert("结束数值必须是大于0的数字");
+        return;
+    }
+
+    cagrTotal = endNum.value/startNum.value-1;
+    cagrRatio = Math.pow(endNum.value/startNum.value, 1/years)-1;
+
+    cagrYearsObj = document.getElementById("cagr_years");
+    cagrYearsObj.innerHTML = years.toFixed(2)+"年";
+
+    cagrTotalObj = document.getElementById("cagr_total");
+    cagrTotalObj.innerHTML = (cagrTotal*100).toFixed(2)+"%";
+
+    cagrRatioObj = document.getElementById("cagr_ratio");
+    cagrRatioObj.innerHTML = (cagrRatio*100).toFixed(2)+"%";
 }
 
 // 计算平均增长率
