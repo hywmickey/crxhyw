@@ -126,6 +126,7 @@ function commTab() {
 			["MBA智库百科", "https://www.mbalib.com/"],
 		],
 		[
+			["高性价比人生指南","https://eternity4719.github.io/HowToLiveBetter/"],
 			["刷新世界观合集","https://www.bilibili.com/read/readlist/rl244892"],
 			["思维新学府","https://space.bilibili.com/1147366908/video"],
 			["忽悠的原理与技巧","https://zhuanlan.zhihu.com/p/19977877"],
