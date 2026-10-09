@@ -2,6 +2,22 @@ function commTab() {
 
 	bookMarkList = [
 		[
+			["知乎AI项目","https://www.zhihu.com/project-square"],
+			["芒格思维模型","https://mungermodels.com/"],
+			["巴菲特知识库","https://learnbuffett.com/"],
+			["阿段笔记","https://learnduan.com/"],
+			["高性价比人生指南","https://eternity4719.github.io/HowToLiveBetter/"],
+			["刷新世界观合集","https://www.bilibili.com/read/readlist/rl244892"],
+			["思维新学府","https://space.bilibili.com/1147366908/video"],
+			["忽悠的原理与技巧","https://zhuanlan.zhihu.com/p/19977877"],
+			["晚晴民国报纸集","https://gpa.eastview.com/crl/lqrcn/"],
+		],
+		[
+			["西方艺术思维导图","https://againster1992-debug.github.io/Art-History-Mindmap/%E8%A5%BF%E6%96%B9%E8%89%BA%E6%9C%AF%E5%8F%B2.html"],
+			["读通鉴","https://www.dutongjian.com/"],
+			["古天文知识库","https://xlhosiro.github.io/tianwen-kb/index.html"],
+		],
+		[
 			["ToolsFun", "https://tools.fun/"],
 			["知犀","https://www.zhixi.com/space?page=owner"],
 			["软件替换","https://alternativeto.net/"],
@@ -124,13 +140,6 @@ function commTab() {
 			["berkshire", "https://www.cnbc.com/berkshire-hathaway-portfolio/"],
 			["voxchina", "http://voxchina.org/"],
 			["MBA智库百科", "https://www.mbalib.com/"],
-		],
-		[
-			["高性价比人生指南","https://eternity4719.github.io/HowToLiveBetter/"],
-			["刷新世界观合集","https://www.bilibili.com/read/readlist/rl244892"],
-			["思维新学府","https://space.bilibili.com/1147366908/video"],
-			["忽悠的原理与技巧","https://zhuanlan.zhihu.com/p/19977877"],
-			["晚晴民国报纸集","https://gpa.eastview.com/crl/lqrcn/"],
 		],
 		[
 			["便签", "https://yun.smartisan.com/#/notes"],
