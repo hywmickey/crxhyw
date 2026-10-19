@@ -94,6 +94,7 @@ function studyList() {
 			["grep","https://www.gnu.org/software/grep/manual/"],
 			["gawk","https://www.gnu.org/software/gawk/manual/"],
 			["sed","https://www.gnu.org/software/sed/manual/"],
+			["adb shell","https://adbshell.com/"],
 		],
 		[
 			["LFS", "https://www.linuxfromscratch.org/lfs/read.html"],
