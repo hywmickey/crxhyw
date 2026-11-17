@@ -14,6 +14,7 @@ function studyList() {
 			["civitai", "https://civitai.com/"],
 		],
 		[
+			["AI-Agent-Book","https://github.com/bojieli/ai-agent-book/"],
 			["代理设计模式", "https://adp.xindoo.xyz/"],
 			["人工智能初学者", "https://github.com/microsoft/AI-For-Beginners/tree/main/translations/zh-CN"],
 			["从零开始构建智能体", "https://hello-agents.datawhale.cc/"],
